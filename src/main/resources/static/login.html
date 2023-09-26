@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="ko">
+
+<!-- Mirrored from co1078.shiningcorp.com/bbs/login.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Sep 2023 00:36:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>로그인 | 샤이닝 - 기업 홈페이지 샘플</title>
+<link rel="stylesheet" href="../css/defaulta68a.css?ver=171222">
+<link rel="stylesheet" href="../sh_img/hd/top_menu/stylea68a.css?ver=171222">
+<link rel="stylesheet" href="../sh_img/hd/sub_main_banner/stylea68a.css?ver=171222">
+<link rel="stylesheet" href="../sh_img/hd/aside/stylea68a.css?ver=171222">
+<link rel="stylesheet" href="../skin/member/sh_basic/sh_stylea68a.css?ver=171222">
+<link rel="stylesheet" href="../css/usera68b.css?ver=171222">
+<link rel="stylesheet" href="../css/page_stylea68a.css?ver=171222">
+<style>
+@import url(../../fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+@import url(../../fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+@import url(../../fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(../../fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url(../../fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+
+/* 나눔스퀘어 */
+@font-face {
+	font-family: 'NanumSquare';
+	src: url(http://hw1100.szs.co.kr/css/font/NanumSquareR.eot);
+	src: url(http://hw1100.szs.co.kr/css/font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+		 url(http://hw1100.szs.co.kr/css/font/NanumSquareR.woff) format('woff'),
+		 url(http://hw1100.szs.co.kr/css/font/NanumSquareR.ttf) format('truetype');
+}
+
+/* 본고딕 */
+@font-face {
+	font-family: 'notokr-thin';
+	src: url(http://hw1100.szs.co.kr/css/font/notokr-thin.eot);
+	src: url(http://hw1100.szs.co.kr/css/font/notokr-thin.eot?#iefix) format('embedded-opentype'),
+		 url(http://hw1100.szs.co.kr/css/font/notokr-thin.woff2) format('woff2'),
+		 url(http://hw1100.szs.co.kr/css/font/notokr-thin.woff) format('woff'),
+		 url(http://hw1100.szs.co.kr/css/font/notokr-thin.ttf) format('truetype'),
+		 url(http://hw1100.szs.co.kr/css/font/notokr-thin.svg#notokr-thin) format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'notokr-regular';
+    src: url(http://hw1100.szs.co.kr/css/font/notokr-regular.eot);
+    src: url(http://hw1100.szs.co.kr/css/font/notokr-regular.eot?#iefix) format('embedded-opentype'),
+         url(http://hw1100.szs.co.kr/css/font/notokr-regular.woff2) format('woff2'),
+         url(http://hw1100.szs.co.kr/css/font/notokr-regular.woff) format('woff'),
+         url(http://hw1100.szs.co.kr/css/font/notokr-regular.svg#notokr-regular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'notokr-medium';
+    src: url(http://hw1100.szs.co.kr/css/font/notokr-medium.eot);
+    src: url(http://hw1100.szs.co.kr/css/font/notokr-medium.eot?#iefix) format('embedded-opentype'),
+         url(http://hw1100.szs.co.kr/css/font/notokr-medium.woff2) format('woff2'),
+         url(http://hw1100.szs.co.kr/css/font/notokr-medium.woff) format('woff'),
+         url(http://hw1100.szs.co.kr/css/font/notokr-medium.svg#notokr-medium) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'notokr-light';
+    src: url(http://hw1100.szs.co.kr/css/font/notokr-light.eot);
+    src: url(http://hw1100.szs.co.kr/css/font/notokr-light.eot?#iefix) format('embedded-opentype'),
+         url(http://hw1100.szs.co.kr/css/font/notokr-light.woff2) format('woff2'),
+         url(http://hw1100.szs.co.kr/css/font/notokr-light.woff) format('woff'),
+         url(http://hw1100.szs.co.kr/css/font/notokr-light.ttf) format('truetype'),
+         url(http://hw1100.szs.co.kr/css/font/notokr-light.svg#notokr-light) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'notokr-demilight';
+    src: url(http://hw1100.szs.co.kr/css/font/notokr-demilight.eot);
+    src: url(http://hw1100.szs.co.kr/css/font/notokr-demilight.eot?#iefix) format('embedded-opentype'),
+         url(http://hw1100.szs.co.kr/css/font/notokr-demilight.woff2) format('woff2'),
+         url(http://hw1100.szs.co.kr/css/font/notokr-demilight.woff) format('woff'),
+         url(http://hw1100.szs.co.kr/css/font/notokr-demilight.ttf) format('truetype'),
+         url(http://hw1100.szs.co.kr/css/font/notokr-demilight.svg#notokr-demilight) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'notokr-bold';
+    src: url(http://hw1100.szs.co.kr/css/font/notokr-bold.eot);
+    src: url(http://hw1100.szs.co.kr/css/font/notokr-bold.eot?#iefix) format('embedded-opentype'),
+         url(http://hw1100.szs.co.kr/css/font/notokr-bold.woff2) format('woff2'),
+         url(http://hw1100.szs.co.kr/css/font/notokr-bold.woff) format('woff'),
+         url(http://hw1100.szs.co.kr/css/font/notokr-bold.svg#notokr-bold) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'notokr-black';
+    src: url(http://hw1100.szs.co.kr/css/font/notokr-black.eot);
+    src: url(http://hw1100.szs.co.kr/css/font/notokr-black.eot?#iefix) format('embedded-opentype'),
+         url(http://hw1100.szs.co.kr/css/font/notokr-black.woff2) format('woff2'),
+         url(http://hw1100.szs.co.kr/css/font/notokr-black.woff) format('woff'),
+         url(http://hw1100.szs.co.kr/css/font/notokr-black.ttf) format('truetype'),
+         url(http://hw1100.szs.co.kr/css/font/notokr-black.svg#notokr-black) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* 아리따 */
+@font-face {
+	font-family: 'arita-thin';
+	src: url(http://hw1100.szs.co.kr/css/font/arita-Thin.eot);
+	src: url(http://hw1100.szs.co.kr/css/font/arita-Thin.eot?#iefix) format('embedded-opentype'),
+		 url(http://hw1100.szs.co.kr/css/font/arita-Thin.woff) format('woff'),
+		 url(http://hw1100.szs.co.kr/css/font/arita-Thin.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'arita-light';
+	src: url(http://hw1100.szs.co.kr/css/font/arita-Light.eot);
+	src: url(http://hw1100.szs.co.kr/css/font/arita-Light.eot?#iefix) format('embedded-opentype'),
+		 url(http://hw1100.szs.co.kr/css/font/arita-Light.woff) format('woff'),
+		 url(http://hw1100.szs.co.kr/css/font/arita-Light.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'arita-medium';
+	src: url(http://hw1100.szs.co.kr/css/font/arita-Medium.eot);
+	src: url(http://hw1100.szs.co.kr/css/font/arita-Medium.eot?#iefix) format('embedded-opentype'),
+		 url(http://hw1100.szs.co.kr/css/font/arita-Medium.woff) format('woff'),
+		 url(http://hw1100.szs.co.kr/css/font/arita-Medium.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'arita-semibold';
+	src: url(http://hw1100.szs.co.kr/css/font/arita-SemiBold.eot);
+	src: url(http://hw1100.szs.co.kr/css/font/arita-SemiBold.eot?#iefix) format('embedded-opentype'),
+		 url(http://hw1100.szs.co.kr/css/font/arita-SemiBold.woff) format('woff'),
+		 url(http://hw1100.szs.co.kr/css/font/arita-SemiBold.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'arita-bold';
+	src: url(http://hw1100.szs.co.kr/css/font/arita-Bold.eot);
+	src: url(http://hw1100.szs.co.kr/css/font/arita-Bold.eot?#iefix) format('embedded-opentype'),
+		 url(http://hw1100.szs.co.kr/css/font/arita-Bold.woff) format('woff'),
+		 url(http://hw1100.szs.co.kr/css/font/arita-Bold.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+</style><!--[if lte IE 8]>
+<script src="http://co1078.shiningcorp.com/js/html5.js"></script>
+<![endif]-->
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "http://co1078.shiningcorp.com/";
+var g5_bbs_url   = "http://co1078.shiningcorp.com/bbs";
+var g5_is_member = "";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "";
+var g5_sca       = "";
+var g5_editor    = "";
+var g5_cookie_domain = "";
+</script>
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<script src="../js/jquery.menua68a.js?ver=171222"></script>
+<script src="../js/commona68a.js?ver=171222"></script>
+<script src="../js/wresta68a.js?ver=171222"></script>
+<script src="../js/placeholders.min.js"></script>
+<link rel="stylesheet" href="../js/font-awesome/css/font-awesome.min.css">
+<script src="../sh_img/hd/top_menu/scripta68a.js?ver=171222"></script>
+</head>
+<body>
+
+
+<!-- 100% 배경이미지 때문에 사용 -->
+<div id="sh_wrapper" >
+
+<!-- 상단 시작 { -->
+<div id="sh_hd">	
+	<div class="top_nav_bg"></div>
+    <h1 id="hd_h1">로그인</h1>
+    <div id="skip_to_container"><a href="#sh_container">본문 바로가기</a></div>
+    
+    <div id="sh_hd_wrapper">
+		
+        <div id="top_nav_wrap">
+            <!-- 메뉴 전체보기 버튼 -->
+            <div id="allmn_btn_wrap"><div id="allmn_btn"><span></span></div></div>
+            <!-- 로고 -->
+            <div id="top_logo">
+                <a href="../index.html"><img src="../sh_img/hd/top_menu/logo.png" alt="샤이닝 - 레저/스포츠 홈페이지 샘플" /></a>
+            </div>
+            <a id="logo_fixed" href="../index.html">샤이닝 - 레저/스포츠 홈페이지 샘플</a>
+	<!-- 상단메뉴 -->
+    <ul id="top_nav">
+        <li class="list list01">
+    <a href="../sh_page/page6.html">SHINING 레져</a>
+    <ul class="sub_ul1">
+                        <li><a href="../sh_page/page6.html">SHINING레져 소개</a></li>
+                        <li><a href="board34fb.html?bo_table=table7">센터 갤러리</a></li>
+                        <li><a href="board9208.html?bo_table=table8">오시는길</a></li>
+                    </ul>
+</li>
+        <li class="list list02">
+    <a href="../sh_page/page10.html">PROGRAM</a>
+    <ul class="sub_ul2">
+                        <li><a href="../sh_page/page10.html">프로그램</a></li>
+                    </ul>
+</li>
+        <li class="list list03">
+    <a href="board8399.html?bo_table=table13">투어가이드</a>
+    <ul class="sub_ul3">
+                        <li><a href="board8399.html?bo_table=table13">갤러리 A타입</a></li>
+                        <li><a href="boarde59e.html?bo_table=table26">갤러리 B타입</a></li>
+                        <li><a href="boardb73f.html?bo_table=table24">갤러리 C타입</a></li>
+                        <li><a href="boarda0da.html?bo_table=table33">갤러리 D타입</a></li>
+                    </ul>
+</li>
+        <li class="list list04">
+    <a href="board6182.html?bo_table=table15">예약 및 상담</a>
+    <ul class="sub_ul4">
+                        <li><a href="board6182.html?bo_table=table15">문의게시판</a></li>
+                        <li><a href="write2ea8.html?bo_table=table16">예약신청</a></li>
+                    </ul>
+</li>
+        <li class="list list05">
+    <a href="boardfd79.html?bo_table=table18">고객센터</a>
+    <ul class="sub_ul5">
+                        <li><a href="boardfd79.html?bo_table=table18">공지사항</a></li>
+                        <li><a href="boardcba7.html?bo_table=table27">자주하는 질문</a></li>
+                    </ul>
+</li>
+    </ul> 
+	<div id="login_all">
+			    
+	    <a href="login.html">LOGIN</a>
+	    <a href="register_form.html">JOIN US</a>
+    </div>
+</div>
+	<!-- 메뉴 전체보기 -->
+<div id="allmn_view_wrap">
+    <div id="allmn_view">
+        	
+        <ul class="listx1">
+                        <li><a href="../sh_page/page6.html">SHINING레져 소개</a></li>
+                        <li><a href="board34fb.html?bo_table=table7">센터 갤러리</a></li>
+                        <li><a href="board9208.html?bo_table=table8">오시는길</a></li>
+                    </ul>
+        	
+        <ul class="listx2">
+                        <li><a href="../sh_page/page10.html">프로그램</a></li>
+                    </ul>
+        	
+        <ul class="listx3">
+                        <li><a href="board8399.html?bo_table=table13">갤러리 A타입</a></li>
+                        <li><a href="boarde59e.html?bo_table=table26">갤러리 B타입</a></li>
+                        <li><a href="boardb73f.html?bo_table=table24">갤러리 C타입</a></li>
+                        <li><a href="boarda0da.html?bo_table=table33">갤러리 D타입</a></li>
+                    </ul>
+        	
+        <ul class="listx4">
+                        <li><a href="board6182.html?bo_table=table15">문의게시판</a></li>
+                        <li><a href="write2ea8.html?bo_table=table16">예약신청</a></li>
+                    </ul>
+        	
+        <ul class="listx5">
+                        <li><a href="boardfd79.html?bo_table=table18">공지사항</a></li>
+                        <li><a href="boardcba7.html?bo_table=table27">자주하는 질문</a></li>
+                    </ul>
+          
+    </div>
+</div>
+	</div>
+</div>
+<!-- } 상단 끝 -->
+
+<!-- 콘텐츠 시작 { -->
+<div id="sh_container">
+
+	<div id="sh_container_wrapper" >
+			<!-- 서브 비주얼영역 -->
+		<div id="sub_main_banner">
+            <div id="sh_content_tit">
+                <h3>로그인</h3>
+                <p><a href="../index.html"><i class="fa fa-home"></i></a> 
+                <i class="fa fa-angle-right"></i> 로그인</p>
+            </div>
+		</div>
+		<!-- 서브메뉴 -->
+		<div id="sh_aside">
+			<div id="sh_aside_wrapper">
+<ul id="sh_snb">
+        
+        <li class='l_menu_ON' >
+        <a href="login.html">로그인</a>
+    </li>
+        <li class='l_menu_OFF' >
+        <a href="register_form.html">회원가입</a>
+    </li>
+    </ul>
+<!-- 소분류 끝 --></div>
+		</div>
+		<!-- 콘텐츠영역 -->
+		<div id="sh_content">
+	
+<!-- sh_login [s] -->
+<div id="sh_login" class="sh_mb_common">
+    <p class="tit"><span>MEMBER</span> LOGIN</p>
+    <form name="flogin" action="http://co1078.shiningcorp.com/bbs/login_check.php" onsubmit="return flogin_submit(this);" method="post">
+        <input type="hidden" name="url" value="http%3A%2F%2Fco1078.shiningcorp.com">
+        <fieldset>
+            <legend>회원로그인</legend>
+            <label for="login_id" class="sound_only">회원아이디<strong class="sound_only"> 필수</strong></label>
+            <input type="text" name="mb_id" id="login_id" required class="frm_input required" size="20" maxLength="20" placeholder="아이디">
+            <label for="login_pw" class="sound_only">비밀번호<strong class="sound_only"> 필수</strong></label>
+            <input type="password" name="mb_password" id="login_pw" required class="frm_input required" size="20" maxLength="20" placeholder="비밀번호">
+            <p class="at_ck">
+                <input type="checkbox" name="auto_login" id="login_auto_login">
+                <label for="login_auto_login">자동로그인</label>
+            </p>
+            <input type="submit" value="로그인">
+        </fieldset>
+		    	<ul>
+            <li><a href="register_form.html">회원가입</a></li>
+			<li><a href="password_lost.html" target="_blank" id="login_password_lost">아이디 찾기</a></li>
+            <li><a href="password_lost.html" target="_blank" id="login_password_lost">비밀번호 찾기</a></li>
+        </ul>
+        <div class="bnr">
+        	<img src="../skin/member/sh_basic/img/bnr_img.png" alt="홈페이지 제작 현대이지웹" />
+            <div class="txt">
+                <p>현대이지웹 <span>1544-6062</span></p>
+                홈페이지 제작 및 문의
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+$(function(){
+    $("#login_auto_login").click(function(){
+        if (this.checked) {
+            this.checked = confirm("자동로그인을 사용하시면 다음부터 회원아이디와 비밀번호를 입력하실 필요가 없습니다.\n\n공공장소에서는 개인정보가 유출될 수 있으니 사용을 자제하여 주십시오.\n\n자동로그인을 사용하시겠습니까?");
+        }
+    });
+});
+
+function flogin_submit(f)
+{
+    return true;
+}
+</script>
+<!-- sh_login [e] -->
+        </div><!-- sh_content -->
+   
+	</div><!-- sh_container_wrapper --> 
+</div><!-- sh_container -->
+<!-- } 콘텐츠 끝 -->
+
+<!-- 하단 시작 { -->
+    <div id="sh_ft">
+        <button id="ft_top">TOP</button>
+        <div id="sh_ft_wrapper">
+            <div id="ft_info">
+                <!-- 하단메뉴 -->
+                <div class="ft_left">
+                    <p class="ft_logo">
+                        샤이닝 - 레저/스포츠 홈페이지 샘플                </p>
+                    경기도 부천시 부흥로 258 일산빌딩 5층 샤이닝 <br />
+    사업자 번호 : 130-37-46318(등록2007년) 통신판매업종신고 : 제2010-경기부천-924호 상호 : 샤이닝 대표 : 오성민<br />
+    고객센터:1544-0634 팩스:0505-200-6060 이메일:hdweb@hdweb.co.kr                 <br>
+                                    
+                </div>
+                <div class="ft_right">
+                    <p class="ft_tel">CUSTOMER SERVICE<br><span>1544-6062</span></p>
+                    <ul class="ft_sns">
+                           <li><a href="#"><img src="../sh_img/ft/twitter.png" alt="트위터"></a></li>
+                        <li><a href="#"><img src="../sh_img/ft/instagram.png" alt="인스타그램"></a></li>
+                        <li><a href="#"><img src="../sh_img/ft/facebook.png" alt="페이스북"></a></li>
+                    </ul>
+                </div>
+            
+            </div>
+            <div class="ft_border">            
+                <div id="ft_bot">
+                    <div class="ft_fin">
+                        <p>Copyright ⓒ 샤이닝 - 레저/스포츠 홈페이지 샘플 All rights reserved.</p>
+                <!-- 관리자 아이콘 -->
+                        <div id="sh_ft_icon">
+                            <a href="../admin/admin.login.html"><img src="../sh_img/ft/adm.png" alt="관리자로그인"></a>
+                            <a href="http://www.make24.kr/" target="_blank"><img src="../sh_img/ft/make24.png" alt="메이크24 바로가기"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+<!-- 100% 배경이미지 때문에 사용 -->
+</div>
+
+
+
+
+<!-- } 하단 끝 -->
+
+
+
+<!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
+<!--[if lte IE 7]>
+<script>
+$(function() {
+    var $sv_use = $(".sv_use");
+    var count = $sv_use.length;
+
+    $sv_use.each(function() {
+        $(this).css("z-index", count);
+        $(this).css("position", "relative");
+        count = count - 1;
+    });
+});
+</script>
+<![endif]-->
+
+</body>
+<script src="../../www.shiningcorp.com/designTail.js"></script>
+
+<!-- Mirrored from co1078.shiningcorp.com/bbs/login.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Sep 2023 00:36:58 GMT -->
+</html>

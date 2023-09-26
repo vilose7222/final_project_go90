@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* SIR 지운아빠 */
+
+/* 새글 스킨 (latest) */
+.lt{margin:36px 50px}
+.lt .top{overflow:hidden;margin-bottom:22px;padding-bottom:13px;border-bottom: 2px solid #1b57a4}
+.lt .top .tit{float:left;font-weight:700;font-size:20px;color:#212121;letter-spacing:-0.3px;font-family:'Open Sans',sans-serif}
+.lt .top .lt_more{float:right;margin-top:5px;padding-right:13px;font-weight:500;font-size:12px;background:url('/img/more_ar.png') right center no-repeat;font-family:'Open Sans',sans-serif}
+.lt .top .lt_more a{color:#212121;font-family: 'Open Sans', sans-serif;font-weight:600}
+.lt li{margin-bottom:13px;padding-left:10px;background:url('/img/li_icon.gif') left center no-repeat}
+.lt li:after{display:block;content:"";clear:both}
+.lt li a{float:left;font-size:15px;color:#666;letter-spacing:-0.2px;font-family:'notokr-regular',sans-serif}
+.lt li span{float:right;font-size:14px;color:#777;letter-spacing:-0.2px;font-family:'notokr-regular',sans-serif}

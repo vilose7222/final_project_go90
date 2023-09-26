@@ -1,0 +1,213 @@
+[2023-09-26 12:43:34][restartedMain][INFO ](StartupInfoLogger.java: logStarting(): 51) : Starting SpringMvcApplication using Java 17.0.6 with PID 19864 (C:\ezen-fullstack\workspace\final_project_go90\bin\main started by ydl in C:\ezen-fullstack\workspace\final_project_go90)
+[2023-09-26 12:43:34][restartedMain][INFO ](SpringApplication.java: logStartupProfileInfo(): 634) : No active profile set, falling back to 1 default profile: "dev"
+[2023-09-26 12:43:34][restartedMain][INFO ](DeferredLog.java: logTo(): 250) : The Class-Path manifest attribute in C:\Users\ydl\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.9.0.0\a68f29ad2376bdb8c04a87cda70c62907995855d\ojdbc8-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/ydl/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.9.0.0/a68f29ad2376bdb8c04a87cda70c62907995855d/oraclepki.jar
+[2023-09-26 12:43:34][restartedMain][INFO ](DeferredLog.java: logTo(): 250) : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-09-26 12:43:34][restartedMain][INFO ](DeferredLog.java: logTo(): 250) : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-09-26 12:43:34][restartedMain][INFO ](StartupInfoLogger.java: logStarting(): 51) : Starting SpringMvcApplication using Java 17.0.6 with PID 12668 (C:\ezen-fullstack\workspace\final_project_go90\bin\main started by ydl in C:\ezen-fullstack\workspace\final_project_go90)
+[2023-09-26 12:43:34][restartedMain][INFO ](SpringApplication.java: logStartupProfileInfo(): 634) : No active profile set, falling back to 1 default profile: "dev"
+[2023-09-26 12:43:34][restartedMain][INFO ](DeferredLog.java: logTo(): 250) : The Class-Path manifest attribute in C:\Users\ydl\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.9.0.0\a68f29ad2376bdb8c04a87cda70c62907995855d\ojdbc8-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/ydl/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.9.0.0/a68f29ad2376bdb8c04a87cda70c62907995855d/oraclepki.jar
+[2023-09-26 12:43:34][restartedMain][INFO ](DeferredLog.java: logTo(): 250) : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-09-26 12:43:34][restartedMain][INFO ](DeferredLog.java: logTo(): 250) : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-09-26 12:43:35][restartedMain][INFO ](TomcatWebServer.java: initialize(): 108) : Tomcat initialized with port(s): 80 (http)
+[2023-09-26 12:43:35][restartedMain][INFO ](DirectJDKLog.java: log(): 173) : Starting service [Tomcat]
+[2023-09-26 12:43:35][restartedMain][INFO ](DirectJDKLog.java: log(): 173) : Starting Servlet engine: [Apache Tomcat/10.1.11]
+[2023-09-26 12:43:35][restartedMain][INFO ](DirectJDKLog.java: log(): 173) : Initializing Spring embedded WebApplicationContext
+[2023-09-26 12:43:35][restartedMain][INFO ](ServletWebServerApplicationContext.java: prepareWebApplicationContext(): 291) : Root WebApplicationContext: initialization completed in 1241 ms
+[2023-09-26 12:43:35][restartedMain][INFO ](TomcatWebServer.java: initialize(): 108) : Tomcat initialized with port(s): 80 (http)
+[2023-09-26 12:43:35][restartedMain][INFO ](DirectJDKLog.java: log(): 173) : Starting service [Tomcat]
+[2023-09-26 12:43:35][restartedMain][INFO ](DirectJDKLog.java: log(): 173) : Starting Servlet engine: [Apache Tomcat/10.1.11]
+[2023-09-26 12:43:35][restartedMain][INFO ](DirectJDKLog.java: log(): 173) : Initializing Spring embedded WebApplicationContext
+[2023-09-26 12:43:35][restartedMain][INFO ](ServletWebServerApplicationContext.java: prepareWebApplicationContext(): 291) : Root WebApplicationContext: initialization completed in 1020 ms
+[2023-09-26 12:43:36][restartedMain][INFO ](WelcomePageHandlerMapping.java: <init>(): 57) : Adding welcome page: class path resource [static/index.html]
+[2023-09-26 12:43:36][restartedMain][INFO ](OptionalLiveReloadServer.java: startServer(): 59) : LiveReload server is running on port 35729
+[2023-09-26 12:43:36][restartedMain][INFO ](WelcomePageHandlerMapping.java: <init>(): 57) : Adding welcome page: class path resource [static/index.html]
+[2023-09-26 12:43:36][restartedMain][INFO ](TomcatWebServer.java: start(): 220) : Tomcat started on port(s): 80 (http) with context path ''
+[2023-09-26 12:43:36][restartedMain][INFO ](StartupInfoLogger.java: logStarted(): 57) : Started SpringMvcApplication in 2.483 seconds (process running for 3.163)
+[2023-09-26 12:43:36][restartedMain][WARN ](OptionalLiveReloadServer.java: startServer(): 62) : Unable to start LiveReload server
+[2023-09-26 12:43:36][restartedMain][WARN ](AbstractApplicationContext.java: refresh(): 616) : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[2023-09-26 12:43:36][restartedMain][INFO ](DirectJDKLog.java: log(): 173) : Stopping service [Tomcat]
+[2023-09-26 12:43:36][restartedMain][INFO ](ConditionEvaluationReportLogger.java: logMessage(): 82) : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[2023-09-26 12:43:36][restartedMain][ERROR](LoggingFailureAnalysisReporter.java: report(): 40) : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+[2023-09-26 12:43:45][http-nio-80-exec-1][INFO ](DirectJDKLog.java: log(): 173) : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-09-26 12:43:45][http-nio-80-exec-1][INFO ](FrameworkServlet.java: initServletBean(): 532) : Initializing Servlet 'dispatcherServlet'
+[2023-09-26 12:43:45][http-nio-80-exec-1][INFO ](FrameworkServlet.java: initServletBean(): 554) : Completed initialization in 2 ms
+[2023-09-26 12:43:45][http-nio-80-exec-1][DEBUG](AbstractPlatformTransactionManager.java: getTransaction(): 370) : Creating new transaction with name [com.ezen.go90.domain.board.service.BoardServiceImpl.load]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+[2023-09-26 12:43:45][http-nio-80-exec-1][INFO ](HikariDataSource.java: getConnection(): 110) : HikariPool-1 - Starting...
+[2023-09-26 12:43:45][http-nio-80-exec-1][WARN ](DriverDataSource.java: <init>(): 70) : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[2023-09-26 12:43:45][http-nio-80-exec-1][INFO ](HikariPool.java: checkFailFast(): 565) : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3af84ddc
+[2023-09-26 12:43:45][http-nio-80-exec-1][INFO ](HikariDataSource.java: getConnection(): 123) : HikariPool-1 - Start completed.
+[2023-09-26 12:43:45][http-nio-80-exec-1][DEBUG](DataSourceTransactionManager.java: doBegin(): 271) : Acquired Connection [HikariProxyConnection@2132283554 wrapping oracle.jdbc.driver.T4CConnection@3af84ddc] for JDBC transaction
+[2023-09-26 12:43:45][http-nio-80-exec-1][DEBUG](DataSourceTransactionManager.java: doBegin(): 289) : Switching JDBC Connection [HikariProxyConnection@2132283554 wrapping oracle.jdbc.driver.T4CConnection@3af84ddc] to manual commit
+[2023-09-26 12:43:45][http-nio-80-exec-1][TRACE](TransactionAspectSupport.java: prepareTransactionInfo(): 629) : Getting transaction for [com.ezen.go90.domain.board.service.BoardServiceImpl.load]
+[2023-09-26 12:43:46][http-nio-80-exec-1][TRACE](TransactionAspectSupport.java: commitTransactionAfterReturning(): 658) : Completing transaction for [com.ezen.go90.domain.board.service.BoardServiceImpl.load]
+[2023-09-26 12:43:46][http-nio-80-exec-1][DEBUG](AbstractPlatformTransactionManager.java: processCommit(): 740) : Initiating transaction commit
+[2023-09-26 12:43:46][http-nio-80-exec-1][DEBUG](DataSourceTransactionManager.java: doCommit(): 334) : Committing JDBC transaction on Connection [HikariProxyConnection@2132283554 wrapping oracle.jdbc.driver.T4CConnection@3af84ddc]
+[2023-09-26 12:43:46][http-nio-80-exec-1][DEBUG](DataSourceTransactionManager.java: doCleanupAfterCompletion(): 393) : Releasing JDBC Connection [HikariProxyConnection@2132283554 wrapping oracle.jdbc.driver.T4CConnection@3af84ddc] after transaction
+[2023-09-26 12:43:50][http-nio-80-exec-5][DEBUG](AbstractPlatformTransactionManager.java: getTransaction(): 370) : Creating new transaction with name [com.ezen.go90.domain.vote.service.VoteServiceImpl.loadVote]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+[2023-09-26 12:43:50][http-nio-80-exec-5][DEBUG](DataSourceTransactionManager.java: doBegin(): 271) : Acquired Connection [HikariProxyConnection@827137783 wrapping oracle.jdbc.driver.T4CConnection@3af84ddc] for JDBC transaction
+[2023-09-26 12:43:50][http-nio-80-exec-5][DEBUG](DataSourceTransactionManager.java: doBegin(): 289) : Switching JDBC Connection [HikariProxyConnection@827137783 wrapping oracle.jdbc.driver.T4CConnection@3af84ddc] to manual commit
+[2023-09-26 12:43:50][http-nio-80-exec-5][TRACE](TransactionAspectSupport.java: prepareTransactionInfo(): 629) : Getting transaction for [com.ezen.go90.domain.vote.service.VoteServiceImpl.loadVote]
+[2023-09-26 12:43:50][http-nio-80-exec-5][TRACE](TransactionAspectSupport.java: commitTransactionAfterReturning(): 658) : Completing transaction for [com.ezen.go90.domain.vote.service.VoteServiceImpl.loadVote]
+[2023-09-26 12:43:50][http-nio-80-exec-5][DEBUG](AbstractPlatformTransactionManager.java: processCommit(): 740) : Initiating transaction commit
+[2023-09-26 12:43:50][http-nio-80-exec-5][DEBUG](DataSourceTransactionManager.java: doCommit(): 334) : Committing JDBC transaction on Connection [HikariProxyConnection@827137783 wrapping oracle.jdbc.driver.T4CConnection@3af84ddc]
+[2023-09-26 12:43:50][http-nio-80-exec-5][DEBUG](DataSourceTransactionManager.java: doCleanupAfterCompletion(): 393) : Releasing JDBC Connection [HikariProxyConnection@827137783 wrapping oracle.jdbc.driver.T4CConnection@3af84ddc] after transaction
+[2023-09-26 12:43:52][http-nio-80-exec-4][DEBUG](AbstractPlatformTransactionManager.java: getTransaction(): 370) : Creating new transaction with name [com.ezen.go90.domain.vote.service.VoteServiceImpl.loadMember]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+[2023-09-26 12:43:52][http-nio-80-exec-4][DEBUG](DataSourceTransactionManager.java: doBegin(): 271) : Acquired Connection [HikariProxyConnection@187436621 wrapping oracle.jdbc.driver.T4CConnection@3af84ddc] for JDBC transaction
+[2023-09-26 12:43:52][http-nio-80-exec-4][DEBUG](DataSourceTransactionManager.java: doBegin(): 289) : Switching JDBC Connection [HikariProxyConnection@187436621 wrapping oracle.jdbc.driver.T4CConnection@3af84ddc] to manual commit
+[2023-09-26 12:43:52][http-nio-80-exec-4][TRACE](TransactionAspectSupport.java: prepareTransactionInfo(): 629) : Getting transaction for [com.ezen.go90.domain.vote.service.VoteServiceImpl.loadMember]
+[2023-09-26 12:43:52][http-nio-80-exec-4][TRACE](TransactionAspectSupport.java: commitTransactionAfterReturning(): 658) : Completing transaction for [com.ezen.go90.domain.vote.service.VoteServiceImpl.loadMember]
+[2023-09-26 12:43:52][http-nio-80-exec-4][DEBUG](AbstractPlatformTransactionManager.java: processCommit(): 740) : Initiating transaction commit
+[2023-09-26 12:43:52][http-nio-80-exec-4][DEBUG](DataSourceTransactionManager.java: doCommit(): 334) : Committing JDBC transaction on Connection [HikariProxyConnection@187436621 wrapping oracle.jdbc.driver.T4CConnection@3af84ddc]
+[2023-09-26 12:43:52][http-nio-80-exec-4][DEBUG](DataSourceTransactionManager.java: doCleanupAfterCompletion(): 393) : Releasing JDBC Connection [HikariProxyConnection@187436621 wrapping oracle.jdbc.driver.T4CConnection@3af84ddc] after transaction
+[2023-09-26 12:43:52][http-nio-80-exec-4][DEBUG](DataSourceUtils.java: doGetConnection(): 117) : Fetching JDBC Connection from DataSource
+[2023-09-26 12:43:52][http-nio-80-exec-6][WARN ](LocalVariableTableParameterNameDiscoverer.java: inspectClass(): 123) : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.ezen.go90.web.member.controller.MemberController
+[2023-09-26 12:43:52][http-nio-80-exec-1][INFO ](MemberController.java: showProfile(): 143) : contentType : image/jpeg
+[2023-09-26 12:43:52][http-nio-80-exec-5][INFO ](MemberController.java: showProfile(): 143) : contentType : image/jpeg
+[2023-09-26 12:43:52][http-nio-80-exec-8][INFO ](MemberController.java: showProfile(): 143) : contentType : image/jpeg
+[2023-09-26 12:43:52][http-nio-80-exec-7][INFO ](MemberController.java: showProfile(): 143) : contentType : image/jpeg
+[2023-09-26 12:43:52][http-nio-80-exec-6][INFO ](MemberController.java: showProfile(): 143) : contentType : image/jpeg
+[2023-09-26 12:43:52][http-nio-80-exec-4][INFO ](MemberController.java: showProfile(): 143) : contentType : image/jpeg
+[2023-09-26 12:43:52][http-nio-80-exec-3][INFO ](MemberController.java: showProfile(): 143) : contentType : image/jpeg
+[2023-09-26 12:43:52][http-nio-80-exec-4][INFO ](MemberController.java: showProfile(): 143) : contentType : image/jpeg
+[2023-09-26 12:43:52][http-nio-80-exec-9][INFO ](MemberController.java: showProfile(): 143) : contentType : image/jpeg
+[2023-09-26 12:43:52][http-nio-80-exec-7][INFO ](MemberController.java: showProfile(): 143) : contentType : image/jpeg
+[2023-09-26 12:43:52][http-nio-80-exec-2][INFO ](MemberController.java: showProfile(): 143) : contentType : image/jpeg
+[2023-09-26 12:43:52][http-nio-80-exec-8][INFO ](MemberController.java: showProfile(): 143) : contentType : image/jpeg
+[2023-09-26 12:45:47][http-nio-80-exec-2][DEBUG](AbstractPlatformTransactionManager.java: getTransaction(): 370) : Creating new transaction with name [com.ezen.go90.domain.board.service.BoardServiceImpl.load]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+[2023-09-26 12:45:47][http-nio-80-exec-2][DEBUG](DataSourceTransactionManager.java: doBegin(): 271) : Acquired Connection [HikariProxyConnection@1153469103 wrapping oracle.jdbc.driver.T4CConnection@3af84ddc] for JDBC transaction
+[2023-09-26 12:45:47][http-nio-80-exec-2][DEBUG](DataSourceTransactionManager.java: doBegin(): 289) : Switching JDBC Connection [HikariProxyConnection@1153469103 wrapping oracle.jdbc.driver.T4CConnection@3af84ddc] to manual commit
+[2023-09-26 12:45:47][http-nio-80-exec-2][TRACE](TransactionAspectSupport.java: prepareTransactionInfo(): 629) : Getting transaction for [com.ezen.go90.domain.board.service.BoardServiceImpl.load]
+[2023-09-26 12:45:47][http-nio-80-exec-2][TRACE](TransactionAspectSupport.java: commitTransactionAfterReturning(): 658) : Completing transaction for [com.ezen.go90.domain.board.service.BoardServiceImpl.load]
+[2023-09-26 12:45:47][http-nio-80-exec-2][DEBUG](AbstractPlatformTransactionManager.java: processCommit(): 740) : Initiating transaction commit
+[2023-09-26 12:45:47][http-nio-80-exec-2][DEBUG](DataSourceTransactionManager.java: doCommit(): 334) : Committing JDBC transaction on Connection [HikariProxyConnection@1153469103 wrapping oracle.jdbc.driver.T4CConnection@3af84ddc]
+[2023-09-26 12:45:47][http-nio-80-exec-2][DEBUG](DataSourceTransactionManager.java: doCleanupAfterCompletion(): 393) : Releasing JDBC Connection [HikariProxyConnection@1153469103 wrapping oracle.jdbc.driver.T4CConnection@3af84ddc] after transaction
+[2023-09-26 12:45:54][http-nio-80-exec-1][DEBUG](DataSourceUtils.java: doGetConnection(): 117) : Fetching JDBC Connection from DataSource
+[2023-09-26 12:45:54][http-nio-80-exec-1][WARN ](MemberController.java: login(): 227) : null
+[2023-09-26 12:46:03][http-nio-80-exec-7][DEBUG](AbstractPlatformTransactionManager.java: getTransaction(): 370) : Creating new transaction with name [com.ezen.go90.domain.board.service.BoardServiceImpl.load]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+[2023-09-26 12:46:03][http-nio-80-exec-7][DEBUG](DataSourceTransactionManager.java: doBegin(): 271) : Acquired Connection [HikariProxyConnection@2126549187 wrapping oracle.jdbc.driver.T4CConnection@3af84ddc] for JDBC transaction
+[2023-09-26 12:46:03][http-nio-80-exec-7][DEBUG](DataSourceTransactionManager.java: doBegin(): 289) : Switching JDBC Connection [HikariProxyConnection@2126549187 wrapping oracle.jdbc.driver.T4CConnection@3af84ddc] to manual commit
+[2023-09-26 12:46:03][http-nio-80-exec-7][TRACE](TransactionAspectSupport.java: prepareTransactionInfo(): 629) : Getting transaction for [com.ezen.go90.domain.board.service.BoardServiceImpl.load]
+[2023-09-26 12:46:03][http-nio-80-exec-7][TRACE](TransactionAspectSupport.java: commitTransactionAfterReturning(): 658) : Completing transaction for [com.ezen.go90.domain.board.service.BoardServiceImpl.load]
+[2023-09-26 12:46:03][http-nio-80-exec-7][DEBUG](AbstractPlatformTransactionManager.java: processCommit(): 740) : Initiating transaction commit
+[2023-09-26 12:46:03][http-nio-80-exec-7][DEBUG](DataSourceTransactionManager.java: doCommit(): 334) : Committing JDBC transaction on Connection [HikariProxyConnection@2126549187 wrapping oracle.jdbc.driver.T4CConnection@3af84ddc]
+[2023-09-26 12:46:03][http-nio-80-exec-7][DEBUG](DataSourceTransactionManager.java: doCleanupAfterCompletion(): 393) : Releasing JDBC Connection [HikariProxyConnection@2126549187 wrapping oracle.jdbc.driver.T4CConnection@3af84ddc] after transaction
+[2023-09-26 12:46:05][http-nio-80-exec-3][DEBUG](DataSourceUtils.java: doGetConnection(): 117) : Fetching JDBC Connection from DataSource
+[2023-09-26 12:46:05][http-nio-80-exec-10][INFO ](MemberController.java: showProfile(): 143) : contentType : image/jpeg
+[2023-09-26 12:46:07][http-nio-80-exec-2][DEBUG](DataSourceUtils.java: doGetConnection(): 117) : Fetching JDBC Connection from DataSource
+[2023-09-26 12:46:07][http-nio-80-exec-2][DEBUG](DataSourceUtils.java: doGetConnection(): 117) : Fetching JDBC Connection from DataSource
+[2023-09-26 12:46:07][http-nio-80-exec-8][INFO ](MemberController.java: showProfile(): 143) : contentType : image/jpeg
+[2023-09-26 12:46:07][http-nio-80-exec-1][ERROR](ControllerExceptionAdvice.java: exception5xxHandle(): 34) : [Server 응답 오류] : {}
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "팀득점,내득점,내도움,내태클,내선방"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:133)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.NumberFormatException: For input string: "팀득점,내득점,내도움,내태클,내선방"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.valueOf(Integer.java:999)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:203)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:425)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:398)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:73)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:729)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125)
+	... 47 common frames omitted
+[2023-09-26 12:46:07][http-nio-80-exec-1][WARN ](AbstractHandlerExceptionResolver.java: logException(): 207) : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "팀득점,내득점,내도움,내태클,내선방"]
+[2023-09-26 12:46:09][http-nio-80-exec-1][INFO ](MemberController.java: matchStatistics(): 269) : 수신한 matchId : 3
+[2023-09-26 12:46:09][http-nio-80-exec-1][INFO ](MemberController.java: matchStatistics(): 270) : 수신한 선수 아이디 : player1
+[2023-09-26 12:46:09][http-nio-80-exec-1][DEBUG](DataSourceUtils.java: doGetConnection(): 117) : Fetching JDBC Connection from DataSource
+[2023-09-26 12:46:10][http-nio-80-exec-5][INFO ](MemberController.java: matchStatistics(): 269) : 수신한 matchId : 1
+[2023-09-26 12:46:10][http-nio-80-exec-5][INFO ](MemberController.java: matchStatistics(): 270) : 수신한 선수 아이디 : player1
+[2023-09-26 12:46:10][http-nio-80-exec-5][DEBUG](DataSourceUtils.java: doGetConnection(): 117) : Fetching JDBC Connection from DataSource
+[2023-09-26 12:46:12][http-nio-80-exec-9][INFO ](MemberController.java: matchStatistics(): 269) : 수신한 matchId : 4
+[2023-09-26 12:46:12][http-nio-80-exec-9][INFO ](MemberController.java: matchStatistics(): 270) : 수신한 선수 아이디 : player1
+[2023-09-26 12:46:12][http-nio-80-exec-9][DEBUG](DataSourceUtils.java: doGetConnection(): 117) : Fetching JDBC Connection from DataSource
+[2023-09-26 12:47:58][RMI TCP Connection(14)-127.0.0.1][INFO ](SpringApplicationAdminMXBeanRegistrar.java: shutdown(): 159) : Application shutdown requested.
+[2023-09-26 12:47:58][RMI TCP Connection(14)-127.0.0.1][INFO ](DirectJDKLog.java: log(): 173) : Stopping service [Tomcat]
+[2023-09-26 12:47:58][RMI TCP Connection(14)-127.0.0.1][INFO ](DirectJDKLog.java: log(): 173) : Destroying Spring FrameworkServlet 'dispatcherServlet'
+[2023-09-26 12:47:58][RMI TCP Connection(14)-127.0.0.1][WARN ](DirectJDKLog.java: log(): 173) : The web application [ROOT] appears to have started a thread named [oracle.jdbc.driver.BlockSource.ThreadedCachingBlockSource.BlockReleaser] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.6/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.6/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ app//oracle.jdbc.internal.Monitor$WaitableMonitor.monitorWait(Monitor.java:258)
+ app//oracle.jdbc.internal.Monitor$WaitableMonitor.monitorWait(Monitor.java:240)
+ app//oracle.jdbc.driver.BlockSource$ThreadedCachingBlockSource$BlockReleaser.run(BlockSource.java:345)
+[2023-09-26 12:47:58][RMI TCP Connection(14)-127.0.0.1][WARN ](DirectJDKLog.java: log(): 173) : The web application [ROOT] appears to have started a thread named [InterruptTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/java.lang.Object.wait(Native Method)
+ java.base@17.0.6/java.util.TimerThread.mainLoop(Timer.java:563)
+ java.base@17.0.6/java.util.TimerThread.run(Timer.java:516)
+[2023-09-26 12:47:58][RMI TCP Connection(14)-127.0.0.1][WARN ](DirectJDKLog.java: log(): 173) : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.6/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.6/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+[2023-09-26 12:47:58][RMI TCP Connection(14)-127.0.0.1][INFO ](HikariDataSource.java: close(): 350) : HikariPool-1 - Shutdown initiated...
+[2023-09-26 12:47:58][RMI TCP Connection(14)-127.0.0.1][INFO ](HikariDataSource.java: close(): 352) : HikariPool-1 - Shutdown completed.

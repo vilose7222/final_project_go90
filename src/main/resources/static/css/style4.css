@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+#in02{position:relative;background:#f9f9f9 url('/img/in02_bg.jpg') center 268px no-repeat;font-family:'notokr-regular'}
+#in02 .intro,#in02 .cont{width:1150px;margin:0 auto}
+#in02 .cont{position:absolute;bottom:-110px;left:50%;margin-left:-575px}
+/*선수소개*/
+#in02 .intro .wrapper{min-height:335px}
+#in02 .intro .tits{overflow:hidden}
+#in02 .intro .tit{float:left;margin:0 22px 21px 0;font-weight:700;font-size:32px;color:#212121;letter-spacing:-1px;font-family:'Open Sans',sans-serif}
+#in02 .intro .s_tit{float:left;margin-top:12px;font-size:16px;color:#777;letter-spacing:-0.3px}
+#in02 .intro .more{float:right;margin-top:14px;padding-right:13px;font-weight:600;font-size:13px;background:url('/img/more_ar.png') right center no-repeat;color:#666;font-family:'Open Sans',sans-serif}
+#in02 .intro .more a{color:#666}
+
+#in02 .intro .txt{position:absolute;bottom:0;left:0;width:278px;height:56px;font-size:18px;line-height:56px;background:#000;color:#efefef;letter-spacing:-0.3px;text-align:center;opacity:0.8;filter:alpha(opacity'80');transition:0.5s;font-family:'notokr-medium',sans-serif}
+#in02 .intro li:hover .txt{background:#1b569f}
+
+#in02 .list li:hover .txt{background:#005dce}
+#in02 .intro .bx-controls{position:relative}
+#in02 .intro .bx-prev, #in02 .bx-next{display:inline-block;width:90px;height:45px;text-indent:-999px;overflow:hidden}
+#in02 .intro .bx-prev{position:absolute;bottom:130px;left:-44px;background:url('/img/ar_l.png') no-repeat center}
+#in02 .intro .bx-prev:hover{background:url('/img/ar_l_h.png') no-repeat center}
+#in02 .intro .bx-next{position:absolute;bottom:130px;right:-44px;background:url('/img/ar_r.png') no-repeat center}
+#in02 .intro .bx-next:hover{background:url('/img/ar_r_h.png') no-repeat center}
+
+/*중간텍스트*/
+#in02>.txt{margin-top:62px;padding-bottom:196px;text-align:center}
+#in02>.txt .txt01{margin-bottom:6px;font-weight:300;font-size:42px;color:#fff;letter-spacing:-0.3px;font-family:'Open Sans',sans-serif}
+#in02>.txt .txt01 span{font-weight:700}
+#in02>.txt .txt02{font-size:16px;line-height:26px;color:#fff;letter-spacing:-0.3px;opacity:0.6;filter:alpha(opacity:'60')}
+
+/*공지사항, 빠른상담 폼*/
+#in02 .box>div{float:left;position:relative;width:569px;height:258px;margin-right:12px;background:#fff;box-shadow:3px 3px 12px rgba(0,0,0,0.15);behavior: url('../404.html')}
+#in02 .box .quick{margin-right:0}

@@ -1,0 +1,434 @@
+<!DOCTYPE HTML>
+<html  xmlns:th="http://www.thymeleaf.org" lang="ko">
+
+<th:block
+   th:replace="~{/layout/layoutv2 :: setContent(~{this :: title}, ~{this :: content},~{this :: css})}">
+
+   <th:block th:fragment="title">
+         <title>회원가입</title>
+   </th:block>
+
+    <!-- 반응형 구조 만들기 -->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+
+   <th:block th:fragment="css">
+    <link rel="stylesheet" href="/css/register1.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker({
+            	changeMonth: true,
+            	changeYear: true,
+            	maxDate: -1,
+            	dateFormat: "yy-mm-dd",
+            	monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'], //달력의 월 부분 텍스트
+                monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'], //달력의 월 부분 Tooltip
+                dayNamesMin: ['일','월','화','수','목','금','토'],
+                showMonthAfterYear:true
+            });
+            $('#datepicker').datepicker('setDate', '2000-01-01');
+        });
+    </script>
+    <style>
+       #sh_content33{
+          margin: 50px 30px;
+       }
+       
+        .ui-widget-header { border: 0px solid #dddddd; background: #fff; } 
+
+ .ui-datepicker-calendar>thead>tr>th { font-size: 14px !important; } 
+
+ .ui-datepicker .ui-datepicker-header { position: relative; padding: 10px 0; } 
+
+ .ui-state-default,
+ .ui-widget-content .ui-state-default,
+ .ui-widget-header .ui-state-default,
+ .ui-button,
+ html .ui-button.ui-state-disabled:hover,
+ html .ui-button.ui-state-disabled:active { border: 0px solid #c5c5c5; background-color: transparent; font-weight: normal; color: #454545; text-align: center; } 
+
+ .ui-datepicker .ui-datepicker-title { margin: 0 0em; line-height: 16px; text-align: center; font-size: 14px; padding: 0px; font-weight: bold; margin-left: 20px; margin-right: 20px;} 
+
+ .ui-datepicker { display: none; background-color: #fff; border-radius: 4px; margin-top: 10px; margin-left: 0px; margin-right: 0px; padding: 20px; padding-bottom: 10px; width: 300px; box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1); } 
+
+ .ui-widget.ui-widget-content { border: 1px solid #eee; } 
+
+ #datepicker:focus>.ui-datepicker { display: block; } 
+
+ .ui-datepicker-prev,
+ .ui-datepicker-next { cursor: pointer; } 
+
+ .ui-datepicker-next { float: right; } 
+
+ .ui-state-disabled { cursor: auto; color: hsla(0, 0%, 80%, 1); } 
+
+ .ui-datepicker-title { text-align: center; padding: 10px; font-weight: 100; font-size: 20px; } 
+
+ .ui-datepicker-calendar { width: 100%; } 
+
+ .ui-datepicker-calendar>thead>tr>th { padding: 5px; font-size: 20px; font-weight: 400; } 
+
+ .ui-datepicker-calendar>tbody>tr>td>a { color: #000; font-size: 12px !important; font-weight: bold !important; text-decoration: none;}
+
+ .ui-datepicker-calendar>tbody>tr>.ui-state-disabled:hover { cursor: auto; background-color: #fff; } 
+
+ .ui-datepicker-calendar>tbody>tr>td { border-radius: 100%; width: 44px; height: 30px; cursor: pointer; padding: 5px; font-weight: 100; text-align: center; font-size: 12px; } 
+
+ .ui-datepicker-calendar>tbody>tr>td:hover { background-color: transparent; opacity: 0.6; } 
+
+ .ui-state-hover,
+ .ui-widget-content .ui-state-hover,
+ .ui-widget-header .ui-state-hover,
+ .ui-state-focus,
+ .ui-widget-content .ui-state-focus,
+ .ui-widget-header .ui-state-focus,
+ .ui-button:hover,
+ .ui-button:focus { border: 0px solid #cccccc; background-color: transparent; font-weight: normal; color: #2b2b2b; } 
+
+ .ui-widget-header .ui-icon { background-image: url('/img/btns.png'); } 
+
+ .ui-icon-circle-triangle-e { background-position: -20px 0px; background-size: 36px; } 
+
+ .ui-icon-circle-triangle-w { background-position: -0px -0px; background-size: 36px; } 
+
+ .ui-datepicker-calendar>tbody>tr>td:first-child a { color: red !important; } 
+
+ .ui-datepicker-calendar>tbody>tr>td:last-child a { color: #0099ff !important; } 
+
+ .ui-datepicker-calendar>thead>tr>th:first-child { color: red !important; } 
+
+ .ui-datepicker-calendar>thead>tr>th:last-child { color: #0099ff !important; } 
+
+ .ui-state-highlight,
+ .ui-widget-content .ui-state-highlight,
+ .ui-widget-header .ui-state-highlight { border: 0px; background: #f1f1f1; border-radius: 50%; padding-top: 10px; padding-bottom: 10px; } 
+
+ .inp { padding: 10px 10px; background-color: #f1f1f1; border-radius: 4px; border: 0px; } 
+
+ .inp:focus { outline: none; background-color: #eee; }
+    </style>
+    </th:block>
+    
+
+   
+<th:block th:fragment="content">
+
+<!-- 상단 메뉴 시작 -->
+<div id="sh_container">
+            <div id="sh_container_wrapper">
+                <!-- 서브 비주얼영역 -->
+                <div id="sub_main_banner">
+                    <div id="sh_content_tit">
+                        <h3>회원가입</h3>
+                        <p><a href="/">HOME</a> 
+         &nbsp;&nbsp;&nbsp;<img src="/img/ar.png" alt="화살표" style="margin-top:-3px"/>&nbsp;&nbsp;&nbsp; 회원가입 </p>
+                    </div>
+                </div>
+                <!-- 서브 비주얼영역 끝 -->
+
+                <!-- 서브메뉴 -->
+                <div id="sh_aside">
+                    <div id="sh_aside_wrapper">
+                        <ul id="sh_snb">
+                            <li class='l_menu_OFF'>
+                                <a href="/member/login">로그인</a>
+                            </li>
+                            <li class='l_menu_ON'>
+                                <a href="/member/regist">회원가입</a>
+                            </li>
+                           
+                        </ul>
+                        <!-- 소분류 끝 -->
+                    </div>
+                </div>
+                </div>
+                </div>
+                
+<!-- 상단 메뉴 끝 -->
+
+
+      <div id="sh_content33">
+
+                    <!-- sh_register [s] -->
+                    <div id="sh_register" class="sh_mb_common">
+
+                        <p class="tit"><span>SIGN</span> UP <i>회원가입 정보입력</i></p>
+
+                        <form action="" th:action="@{/member/register}" method="post" th:object="${member}" enctype="multipart/form-data">
+                            <input type="hidden" name="w" value="">
+                            <input type="hidden" name="url" value="">
+                            <input type="hidden" name="agree" value="1">
+                            <input type="hidden" name="agree2" value="1">
+                            <input type="hidden" name="cert_type" value="">
+                            <input type="hidden" name="cert_no" value="">
+                            <input type="hidden" name="mb_sex" value="">
+                            <div class="cont">
+                            
+                                <p class="stit">사이트 이용정보 입력</p>
+                                <ul>
+                                    <li>
+                                        <label for="reg_mb_id" class="sound_only" th:text="#{member.label.id}" >아이디<strong>필수</strong></label>
+                                        <input type="text" name="mb_id" value="" id="reg_mb_id" required  th:field="*{memberId}"
+                                            class="sh_input required " minlength="3" maxlength="20" placeholder="아이디">
+                                        <span id="msg_mb_id"></span>
+                                        <p class="sh_info">영문자, 숫자, _ 만 입력 가능. 최소 3자이상 입력하세요.</p>
+                                    </li>
+                                    <li>
+                                        <label for="reg_mb_password" class="sound_only" th:text="#{member.label.passwd}">비밀번호<strong
+                                                class="sound_only">필수</strong></label>
+                                        <input type="password" name="mb_password" id="reg_mb_password" required th:field="*{passwd}"
+                                            class="sh_input required" minlength="3" maxlength="20" placeholder="비밀번호">
+
+                                        <label for="reg_mb_password_re" class="sound_only">비밀번호
+                                            확인<strong>필수</strong></label>
+                                        <input type="password" name="mb_password_re" id="reg_mb_password_re" required
+                                            class="sh_input required" minlength="3" maxlength="20"
+                                            placeholder="비밀번호 확인">
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="cont">
+                                <p class="stit">개인정보 입력</p>
+
+                                <ul>
+                                    <li>
+                                        <label for="reg_mb_name" class="sound_only">이름<strong>필수</strong></label>
+                                        <input type="text" id="reg_mb_name" name="mb_name" value="" required th:field="*{name}"
+                                            class="sh_input required " size="10" placeholder="이름">
+
+                                        <p class="sh_info">
+                                            공백없이 한글,영문,숫자만 입력 가능 (한글2자, 영문4자 이상)
+                                            
+                                        </p>
+
+                                    </li>
+
+                                    <li>
+                                        <label for="reg_mb_email" class="sound_only">E-mail<strong>필수</strong></label>
+
+                                        <input type="hidden" name="old_email" value="">
+                                        <input type="text" name="mb_email" value="" id="reg_mb_email" required th:field="*{email}"
+                                            class="email sh_input required" size="50" maxlength="100"
+                                            placeholder="E-mail">
+
+                                    </li>
+                                    
+                                    <li>
+                                        <label for="datepicker" class="sound_only">생년월일</label>
+                                        <input type="text" id="datepicker" name="mb_date" value="" required th:field="*{birth}"
+                                            class="sh_input required " placeholder="생년월일">
+                                        
+                                    </li>
+
+
+                                    <li>
+										<label for="datepicker" class="sh_info">부여받으신 코드를 입력하세요</label>
+                                        <input type="text" id="datepicker"   th:field="*{rank}"
+                                            class="sh_input " placeholder="회원코드">
+                                    </li>
+
+
+                                </ul>
+                        <p class="stit">프로필이미지</p>
+                                <section id="profile" class="info">
+              <div class="profile-image-container">
+                <img src="/img/profile.PNG" id="preview" width="200px" alt="프로필 이미지" class="profile-image">
+                <div class="password-change">
+                    <input type="file" onchange="readURL(this);" accept="image/*" th:field="*{memberImg}"  />
+                    <img id="preview" />
+                </div>
+              </div>
+            </section>
+                            </div>
+
+                            <div class="cont">
+                                <p class="stit">기타 개인설정</p>
+                                <ul class="etc_li">
+
+
+
+
+                                    <li class="agr_area">
+                                        <div>
+                                            <input type="checkbox" name="mb_mailling" value="1" id="reg_mb_mailling"
+                                                checked>
+                                            <label for="reg_mb_mailling" class="frm_label"> 메일 수신 동의</label>
+                                        </div>
+                                    </li>
+
+
+                                    <li class="agr_area">
+                                        <div>
+                                            <input type="hidden" name="mb_open_default" value="">
+                                            <input type="checkbox" name="mb_open" value="1" checked id="reg_mb_open">
+                                            <label for="reg_mb_open" class="frm_label"> 정보 공개 동의</label>
+                                        </div>
+                                        
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
+                            <div class="btn_wrap">
+                                <a href="index.html">취소</a>
+                                <input type="submit" value="회원가입" th:value="#{member.button.register}" id="btn_submit" class="btn_submit" accesskey="s">
+                            </div>
+                        </form>
+
+                    </div>
+                    <!-- sh_register [e] -->
+
+
+                    <script>
+                        $(function () {
+                            $("#reg_zip_find").css("display", "inline-block");
+
+                        });
+
+                        // submit 최종 폼체크
+                        function fregisterform_submit(f) {
+                            // 회원아이디 검사
+                            if (f.w.value == "") {
+                                var msg = reg_mb_id_check();
+                                if (msg) {
+                                    alert(msg);
+                                    f.mb_id.select();
+                                    return false;
+                                }
+                            }
+
+                            if (f.w.value == "") {
+                                if (f.mb_password.value.length < 3) {
+                                    alert("비밀번호를 3글자 이상 입력하십시오.");
+                                    f.mb_password.focus();
+                                    return false;
+                                }
+                            }
+
+                            if (f.mb_password.value != f.mb_password_re.value) {
+                                alert("비밀번호가 같지 않습니다.");
+                                f.mb_password_re.focus();
+                                return false;
+                            }
+
+                            if (f.mb_password.value.length > 0) {
+                                if (f.mb_password_re.value.length < 3) {
+                                    alert("비밀번호를 3글자 이상 입력하십시오.");
+                                    f.mb_password_re.focus();
+                                    return false;
+                                }
+                            }
+
+                            // 이름 검사
+                            if (f.w.value == "") {
+                                if (f.mb_name.value.length < 1) {
+                                    alert("이름을 입력하십시오.");
+                                    f.mb_name.focus();
+                                    return false;
+                                }
+
+                                /*
+                                var pattern = /([^가-힣\x20])/i;
+                                if (pattern.test(f.mb_name.value)) {
+                                    alert("이름은 한글로 입력하십시오.");
+                                    f.mb_name.select();
+                                    return false;
+                                }
+                                */
+                            }
+
+
+                            // 닉네임 검사
+                            if ((f.w.value == "") || (f.w.value == "u" && f.mb_nick.defaultValue != f.mb_nick.value)) {
+                                var msg = reg_mb_nick_check();
+                                if (msg) {
+                                    alert(msg);
+                                    f.reg_mb_nick.select();
+                                    return false;
+                                }
+                            }
+
+                            // E-mail 검사
+                            if ((f.w.value == "") || (f.w.value == "u" && f.mb_email.defaultValue != f.mb_email.value)) {
+                                var msg = reg_mb_email_check();
+                                if (msg) {
+                                    alert(msg);
+                                    f.reg_mb_email.select();
+                                    return false;
+                                }
+                            }
+
+
+                            if (typeof f.mb_icon != "undefined") {
+                                if (f.mb_icon.value) {
+                                    if (!f.mb_icon.value.toLowerCase().match(/.(gif|jpe?g|png)$/i)) {
+                                        alert("회원아이콘이 이미지 파일이 아닙니다.");
+                                        f.mb_icon.focus();
+                                        return false;
+                                    }
+                                }
+                            }
+
+                            if (typeof f.mb_img != "undefined") {
+                                if (f.mb_img.value) {
+                                    if (!f.mb_img.value.toLowerCase().match(/.(gif|jpe?g|png)$/i)) {
+                                        alert("회원이미지가 이미지 파일이 아닙니다.");
+                                        f.mb_img.focus();
+                                        return false;
+                                    }
+                                }
+                            }
+
+                            if (typeof (f.mb_recommend) != "undefined" && f.mb_recommend.value) {
+                                if (f.mb_id.value == f.mb_recommend.value) {
+                                    alert("본인을 추천할 수 없습니다.");
+                                    f.mb_recommend.focus();
+                                    return false;
+                                }
+
+                                var msg = reg_mb_recommend_check();
+                                if (msg) {
+                                    alert(msg);
+                                    f.mb_recommend.select();
+                                    return false;
+                                }
+                            }
+
+                            if (!chk_captcha()) return false;
+
+                            document.getElementById("btn_submit").disabled = "disabled";
+
+                            return true;
+                        }
+                        
+                        
+                        function readURL(input) {
+                             if (input.files && input.files[0]) {
+                               var reader = new FileReader();
+                               reader.onload = function(e) {
+                                 document.getElementById('preview').src = e.target.result;
+                               };
+                               reader.readAsDataURL(input.files[0]);
+                             } else {
+                               document.getElementById('preview').src = "";
+                             }
+                           }
+                    </script>
+
+                    <!-- } 회원정보 입력/수정 끝 -->
+                </div><!-- sh_content -->
+
+
+
+
+</th:block>
+
+</th:block>
+
+</html>

@@ -1,0 +1,348 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<th:block
+	th:replace="~{/layout/layoutv1 :: setContent(~{this :: title}, ~{this :: content},~{this :: css})}">
+	
+	<th:block th:fragment="title">
+			<title>Go90 FOOTBALL CLUB</title>
+	</th:block>
+
+
+
+
+
+<th:block th:fragment="css">
+<!-- 전체레이아웃 css -->
+<link rel="stylesheet" href="/css/styledefaulta.css">
+<link rel="stylesheet" href="/css/stylemain1.css">
+<link rel="stylesheet" href="/css/stylea68a.css">
+<!-- 메인화면 글씨 배치 및 스크롤 css -->
+<link rel="stylesheet" href="/css/style111.css">
+<!-- 바로 밑 사진 -->
+<link rel="stylesheet" href="/css/style3.css">
+<!-- 그 밑 -->
+<link rel="stylesheet" href="/css/style4.css">
+<link rel="stylesheet" href="/css/style5.css">
+<link rel="stylesheet" href="/css/style6.css">
+<!-- footer 바로 위 문의 사항??? -->
+<link rel="stylesheet" href="/css/style7.css">
+<!-- 문의 사항 밑 MATCH RESULTS -->
+<link rel="stylesheet" href="/css/style8.css">
+<!-- MATCH RESULTS 사진 -->
+<link rel="stylesheet" href="/css/style9.css">
+<!-- 중,하단 레이아웃 -->
+<link rel="stylesheet" href="/css/style10.css">
+<!-- 메인 폰트 -->
+<link rel="stylesheet" href="/css/font main.css">
+<script src="/js/jquery-1.8.3.min.js"></script>
+<script src="/js/jquery-ui.js"></script>
+<script src="/js/jquery.menua68a.js"></script>
+<script src="/js/commona68a.js"></script>
+<script src="/js/wresta68a.js"></script>
+<script src="/js/placeholders.min.js"></script>
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<script src="/js/scriptamain2.js"></script>
+<style>
+
+
+</style>
+</th:block>
+
+
+
+<th:block th:fragment="content">
+
+
+
+
+
+<!-- 콘텐츠 시작 { -->
+<div id="sh_container">
+   <div id="sh_container_wrapper">
+   
+<!-- 메인 비주얼모션 -->
+<div id="main_banner">
+   
+<ul id="main_banner_wrap" >
+   <li class="txt_01">MOST VALUEABLE FOOTBALL</li>
+   <li class="txt_02">WE ARE THE<br><span>BEST FOOTBALL CLUB</span></li>
+   <li class="txt_03">직업 &middot; 나이 &middot; 실력과 상관없이 어느 누구보다 축구에 대한 열정으로 가득한 Go90 FC</li>
+</ul>
+<div class="scroll">
+    <img src="img/scroll.png" alt="scroll down" />
+    <p>SCROLL DOWN</p>
+</div>
+
+<div id="idx_box">
+   <div id="idx_box_wrapper">
+        <div id="m01" class="a_box">
+            <img src="img/w_circle.png" class="w_cir" alt="dot">
+            <a class="more" href="sh_page/page6.html">
+                <p class="idx_title">Go90 FC 소개</p>
+                <ul class="m01_01">
+                    <li class="title_li">Go90 FC 소개</li>
+                    <li class="text_li">축구를 좋아하고 즐길줄 아는 사람들이<br>모여 만든 축구동호회 Go90 FC</li>
+                    <li class="img_li"><img src="img/m01_img.jpg" alt="소개"></li>
+                </ul>
+            </a>
+        </div>
+    
+        <div id="m02" class="a_box">
+            <img src="img/w_circle.png" class="w_cir" alt="dot">
+            <a class="more" href="sh_page/page10.html">
+            <p class="idx_title">경기 일정</p>
+                <ul class="m02_01">
+                    <li class="title_li">경기 일정</li>
+                    <li class="text_li">Go90 FC의 경기 일정을 안내해 드립니다.<br>경기 결과도 확인하실수 있습니다.</li>
+                    <li class="img_li"><img src="img/m02_img.jpg" alt="일정"></li>
+                </ul>
+            </a>         
+        </div>
+    
+        <div id="m03" class="a_box">
+            <img src="img/w_circle.png" class="w_cir" alt="dot">
+            <a class="more" href="bbs/board6182.html?bo_table=table15">
+            <p class="idx_title">가입문의</p> 
+            
+                <ul class="m03_01">
+                    <li class="title_li">가입문의</li>
+                    <li class="text_li">Go90 FC에 대해 전화로 문의해보세요.<br><span>1234-5678</span></li>
+                    <li class="img_li"><img src="img/m03_img.jpg" alt="문의"></li>
+                </ul>   
+            </a>        
+        </div>
+   </div>
+</div>
+<script>
+$(document).ready(function(){
+   $("#main_banner_wrap li.txt_01").delay(500).animate({"opacity":1},1500)
+   $("#main_banner_wrap li.txt_02").delay(1000).animate({"opacity":1,"left":0},1500)
+   $("#main_banner_wrap li.txt_03").delay(1500).animate({"opacity":1,"left":0},1500)
+
+   $("#idx_box_wrapper a").mouseover(function(){
+      $(this)   .children('ul').stop().animate({"top":-166},100);
+   });
+   $("#idx_box_wrapper a").mouseout(function(){
+      $(this)   .children('ul').stop().animate({"top":85},100);
+   });
+})
+</script></div>
+<!-- 메인 비주얼모션 끝 -->
+
+<!-- 동호회소개, 가입신청 -->
+
+<div id="in01">
+   <div class="cont">
+       <div class="top">
+           <div class="img"><img src="img/in01_img01.jpg" alt="동호회소개 바로가기" /></div>
+            <div class="box">
+               <p class="tit">전통이 있는 축구 동호회<br /><span>Go90 풋볼 클럽</span></p>
+                <p class="txt">직업, 나이, 실력을 떠나서 축구를 좋아하고 즐길줄 아는<br />사람들이 모여 만든 축구 동호회 Go90 FC 입니다.</p>
+                <div class="btn"><a href="sh_page/page6.html">동호회소개 바로가기</a></div>
+            </div>
+        </div>
+        <div class="bot">
+           <div class="img"><img src="img/in01_img02.jpg" alt="가입신청 바로가기" /></div>
+            <div class="box">
+               <p class="tit">축구의 즐거움을 아는 Go90 FC<br /><span>선수 및 회원모집</span></p>
+                <p class="txt">Go90 FC에서 회원분들을 모집하고 있습니다.<br />조건은 따로 없고 축구를 좋아하시는 분이면 됩니다.</p>
+                <div class="btn"><a href="bbs/write2ea8.html?bo_table=table16">가입신청 바로가기</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 플레이어소개, 공지사항, 빠른상담폼 -->
+<div id="in02">
+   <div class="intro">
+       <div class="tits">
+            <p class="tit">INTRODUCE PLAYERS</p>
+            <p class="s_tit">축구로 인해, 축구에 의해, 축구를 위해 모인 Go90 FC의 선수들을 소개합니다.</p>
+            <p class="more"><a href="bbs/board34fb.html?bo_table=table7">MORE</a></p>
+        </div>
+        <div class="wrapper">
+            <div>
+                <ul class="list">
+                             
+                    <li>
+                        <a href="bbs/board5263.html?bo_table=table7&amp;wr_id=9" title="샤이닝FC">
+                            <img src='img/thumb1.jpg' width='278' height='335' alt='샤이닝FC' class='grayscale  grayscale-fade' />                            
+                        </a>
+                    </li>      
+                             
+                    <li>
+                        <a href="bbs/board054d.html?bo_table=table7&amp;wr_id=8" title="샤이닝FC">
+                            <img src='img/thumb2.jpg' width='278' height='335' alt='샤이닝FC' class='grayscale  grayscale-fade' />                            
+                        </a>
+                    </li>      
+                             
+                    <li>
+                        <a href="bbs/boardaf27.html?bo_table=table7&amp;wr_id=7" title="샤이닝FC">
+                            <img src='img/thumb5.jpg' width='278' height='335' alt='샤이닝FC' class='grayscale  grayscale-fade' />                            
+                        </a>
+                    </li>      
+                             
+                    <li>
+                        <a href="bbs/board247e.html?bo_table=table7&amp;wr_id=6" title="샤이닝FC">
+                            <img src='img/thumb3.jpg' width='278' height='335' alt='샤이닝FC' class='grayscale  grayscale-fade' />                            
+                        </a>
+                    </li>      
+                             
+                    <li>
+                        <a href="bbs/board829b.html?bo_table=table7&amp;wr_id=5" title="샤이닝FC">
+                            <img src='img/thumb4.jpg' width='278' height='335' alt='샤이닝FC' class='grayscale  grayscale-fade' />                            
+                        </a>
+                    </li>      
+                                    </ul>
+            </div>
+         </div>
+   </div>
+    <div class="txt">
+       <p class="txt01">TOWARDS <span>THE BEST</span></p>
+        <p class="txt02">최고를 넘어 그 이상이 되기위해 최선을 다하는 Go90 FC 입니다.<br />
+      우리의 노력은 배신하지 않습니다.</p>
+    </div>
+    <div class="cont box">
+        <div class="notice">
+            
+<div class="lt">
+   <div class="top">
+        <p class="tit">NOTICE</p>
+        <div class="lt_more"><a href="bbs/boardfd79.html?bo_table=table18"><span class="sound_only">공지사항</span>MORE</a></div>
+    </div>
+    <ul>
+                <li>
+            <a href="bbs/board892d.html?bo_table=table18&amp;wr_id=2">공지 게시글 1</a>  <i class="fa fa-heart" aria-hidden="true"></i>               <span>2018-08-24</span>
+        </li>
+                <li>
+            <a href="bbs/board1eef.html?bo_table=table18&amp;wr_id=1">공지 게시글 2</a>  <i class="fa fa-heart" aria-hidden="true"></i>               <span>2018-08-24</span>
+        </li>
+                    </ul>
+</div>        </div>
+        <div class="quick">
+          <div>
+               <div id="sp_form">   
+   <p class="tit">QUICK REQUEST</p>
+   <form name="fquicksms" method="post" action="" autocomplete="off" onsubmit="return fquicksms_submit(this);">
+        <input type="hidden" name="form_url" value="/" />
+        <dl class="left">
+            <dt><label for="wr_name" >이름<strong class="sound_only">필수</strong></label></dt>
+            <dd><input type="text" maxlength="20" name="wr_name" placeholder="이름" required id="wr_name"></dd>
+
+            <dt><label for="sh_phonID">연락처<strong class="sound_only">필수</strong></label></dt>
+            <dd  class="list"><input maxlength="12" type="text" name="sh_phone" placeholder="연락처" required onkeyup='Num_ck(this);' id="sh_phonID"></dd>
+        </dl>
+        <dl class="right">  
+            <dt><label for="wr_content">내용</label></dt>
+            <dd><textarea name='wr_content' class="txt_st" placeholder="내용" title="content" id="wr_content"></textarea>
+            </dd>
+        </dl> 
+        <p>
+            <a id="agree_link" onclick="window.open('sh_img/make24/sh_privacy.html', 'window', 'width=600; height=800; left=150; top=0; scrollbars=no')">개인정보취급방침</a>
+            <label for="m_agree" class="agr">동의</label>
+            <input type="checkbox" name="m_agree" id="m_agree" class="m_agree">
+        </p>
+        <input type="submit" class="buttom_st" id="btn_submit" accesskey='s' value="온라인 문의하기">
+    </form>
+</div>
+
+<script>
+function Num_ck(obj) { 
+    var val = obj.value; 
+    if(isNaN(val)) { 
+        alert("숫자만 입력해 주세요"); 
+        obj.value = val.replace(/[^0-9]/gi, ''); 
+    }  
+}
+
+function fquicksms_submit(f)
+{
+   if(!f.m_agree.checked){
+      alert("개인정보취급방침에 동의 해주세요.");
+      $("#m_agree").focus();
+      return false;
+   }
+}
+</script>            </div>
+       </div>
+    </div>    
+</div>
+ 
+<script>
+$('#in02 .wrapper .list').bxSlider({
+    slideWidth: 278,
+    minSlides: 4,
+    maxSlides: 4,
+    moveSlides: 1,
+    slideMargin: 13,
+    controls: true,
+    pager:false,
+    auto:true,
+    pause:3000,
+    speed:500
+});
+</script>
+<!-- 갤러리 -->
+
+<div class="index03">
+    <div class="tit_wrap">
+        <p class="s_tit">MATCH RESULTS</p>
+        <p class="b_tit">샤이닝FC의 경기 결과 및 경기 장면을 확인할 수 있습니다.</p>       
+        <p class="more"><a class="view_more" href="bbs/board8399.html?bo_table=table13">MORE</a></p>
+    </div>
+   <div class="out_latest_wrap"><div class="latest_box">
+<ul class="lei_gallery">
+   <li class="lei_gallery_img">
+       <img src="img/thumb6.jpg" alt="images" width="367" height="277">        <a href="bbs/boardd469.html?bo_table=table13&amp;wr_id=25">이미지 게시판 바로가기</a>
+   </li>
+   
+</ul>
+<ul class="lei_gallery">
+   <li class="lei_gallery_img">
+       <img src="img/thumb7.jpg" alt="images" width="367" height="277">        <a href="bbs/board2aa2.html?bo_table=table13&amp;wr_id=24">이미지 게시판 바로가기</a>
+   </li>
+   
+</ul>
+<ul class="lei_gallery">
+   <li class="lei_gallery_img">
+       <img src="img/thumb8.jpg" alt="images" width="367" height="277">        <a href="bbs/board25c1.html?bo_table=table13&amp;wr_id=23">이미지 게시판 바로가기</a>
+   </li>
+   
+</ul>
+
+</div></div>
+</div>
+   
+   </div><!-- sh_container_wrapper --> 
+</div><!-- sh_container -->
+<!-- } 콘텐츠 끝 -->
+
+
+
+<!-- 100% 배경이미지 때문에 사용 -->
+
+
+<script>
+$(function(){$(window).scroll(function(){
+    if ($(this).scrollTop() > 400) {$('#ft_top').fadeIn()} 
+    else { $('#ft_top').fadeOut()};});
+});
+$('#ft_top').click(function() {
+    $('html, body').animate({scrollTop:0});
+});
+</script>
+
+
+<!-- } 하단 끝 -->
+
+<script>
+$(function() {
+    // 폰트 리사이즈 쿠키있으면 실행
+    font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+});
+</script>
+
+
+</th:block>
+</th:block>
+</html>

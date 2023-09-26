@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* SHINING 독립 사용 */
+
+#sp_form{position:relative;margin:36px 41px}
+#sp_form .tit{font-weight:700;font-size:20px;color:#212121;letter-spacing:-0.3px;font-family:'Open Sans',sans-serif}
+#sp_form label{display:none}
+#sp_form dd input{position:relative;width:219px;height:43px;margin-bottom:6px;padding:0 0 0 19px;border-radius:2px;border:1px solid #ddd;font-size:14px;line-height:43px;color:#9c9c9c;behavior: url(../../../js/PIE.html);box-shadow:none; box-sizing:content-box}
+#sp_form .list input{margin-bottom:13px}
+#sp_form dd textarea{position:relative;width:219px;height:79px;padding:15px 0 0 19px;border-radius:2px;border:1px solid #ddd;font-size:14px;color:#9c9c9c;behavior: url(../../../js/PIE.html);box-sizing:content-box}
+#sp_form .left{float:left;margin-top:12px}
+#sp_form .right{float:right;margin-top:12px}
+#sp_form p{margin-top:7px;clear:both}
+#sp_form p:after{display:block;content:"";clear:both}
+#sp_form .agr{display:block;float:left;margin:6px 8px 0;font-size:13px;color:#777;letter-spacing:-0.2px}
+#sp_form .m_agree{float:left;margin-top:9px}
+#agree_link{display:block;float:left;position:relative;width:128px;height:28px;border-radius:2px;font-size:13px;line-height:28px;background:#494949;color:#fff;letter-spacing:-0.5px;text-align:center;behavior: url(../../../js/PIE.html);cursor:pointer}
+#sp_form .buttom_st{position:absolute;bottom:-12px;right:0;width:240px;height:45px;border:none;border-radius:2px;font-size:15px;line-height:45px;background:#0f3360;color:#fff;letter-spacing:-0.3px;text-align:center;transition:0.5s;cursor:pointer;behavior: url(../../../js/PIE.html);font-family:'notokr-medium',sans-serif}
+#sp_form .buttom_st:hover{background:#0c2b53}
+
