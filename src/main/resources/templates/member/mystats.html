@@ -115,7 +115,6 @@
 
 					<div class="user-stats">
 						<h2>MY STATS</h2>
-										<input type="hidden" class="member-id" th:value="${member.memberId}">
 
 						<!-- playerStats 맵 순회 -->
 						<th:block th:each="entry : ${playerStats}">
@@ -129,7 +128,6 @@
 											th:text="${entry.value[0].team} + ' VS ' + ${entry.value[0].opponent}">
 											이젠 FC <span>VS</span> 아카데미 FC
 										</p>
-										<input type="hidden" name="matchId" th:value="${matchId}">
 										<input type="hidden" name="memberId" th:value="${member.memberId}">
 									</div>
 									<table class="stats-table">

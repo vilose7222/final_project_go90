@@ -10,7 +10,7 @@ let tableRows = document.querySelectorAll(".stats-table tbody tr"); //HTML table
 
 /**첫번째그래프 */
 // 초기 데이터
-let initialMatchDate = ["득점","도움","태클","세이브"];
+let initialStats = ["득점","도움","태클","세이브"];
 let initialScores = [1, 3, 4, 2];
 //초기 그래프 생성
 let ctx = document.getElementById("scoreChart").getContext("2d");
@@ -94,10 +94,10 @@ function updateChart(matchDate, scores) {
 }
 
 // 페이지 로드 시 초기 그래프를 보여주도록 호출
-updateChart(initialMatchDate, initialScores);
+updateChart(initialStats, initialScores);
 
 
-/*************************************************** */
+/*================두번째 그래프================== */
 
 
 // 초기 데이터
@@ -135,6 +135,7 @@ let matchChart = new Chart(ctxMatchBar, {
 initializeGraph();
 let memberIdEl = document.querySelector('input[name="memberId"]');
 let memberId = memberIdEl.value;
+
 // fetch로 받아온 정보를 보여주기
 async function updateMatchChart(matchId) {
 	try {

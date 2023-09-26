@@ -260,7 +260,7 @@ public class MemberController {
 		return "member/mystats";
 	}
 	
-	/** 마이페이지 경기 총 득점 통계를 위한 처리(비동기통신) */
+	/** 마이페이지 경기 총 득점 통계를 위한 처리(JS의 요청에 응답) */
 	@GetMapping("/mystats/{matchId}/{memberId}")
 	@ResponseBody
 	public List<Statistics> matchStatistics( @PathVariable("matchId")int matchId,
