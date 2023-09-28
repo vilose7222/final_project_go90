@@ -38,6 +38,9 @@ public interface MatchMapper {
 	public List<Statistics> statisticsMatchAndMember(@Param("matchId") int matchId, 
 													 @Param("memberId")String memberId);
 	
+	//총 경기수와 선수의 참가 총 경기 조회
+	public Statistics matchCount(String memberId);
+	
 	//팀 득점 통계
 //	public List<Participant>statisticsScore(@Param("matchId") int matchId, @Param("memberId")String memberId);
 	

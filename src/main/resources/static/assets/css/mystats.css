@@ -57,6 +57,15 @@ header {
   display: flex;
 }
 
+.chart-title p{
+	 background: #d5c5c554;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.8);
+	padding:20px;
+	text-align:center;
+	font-weight:bolder;
+	font-size:2em;
+	margin-top:7%;
+}
 .chart {
   flex: 1;
   min-width: 10%;

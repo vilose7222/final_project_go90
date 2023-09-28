@@ -30,5 +30,7 @@ public class Statistics {
 	private int totalAssist;
 	private int totalTackle;
 	private int totalSave;
+	private int totalMatchCount;
+	private int playerMatchCount;
 	
 }

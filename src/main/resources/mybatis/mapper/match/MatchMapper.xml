@@ -141,4 +141,20 @@ ORDER BY
 </select>
 
 
+<!-- 경기수와 선수 참여 경기수 비교  -->
+<select id = "matchCount" resultType="Statistics" parameterType="string">
+	SELECT
+    (SELECT COUNT(DISTINCT q.match_id)
+        FROM quarter q
+        WHERE q.quarter_id IN 
+        (SELECT p.quarter_id FROM participant p 
+            WHERE p.member_id = #{member_id})) player_match_count,
+        (SELECT COUNT(DISTINCT match_id) FROM match) total_match_count
+	FROM DUAL
+</select>
+
+
+
+
+
 </mapper>     

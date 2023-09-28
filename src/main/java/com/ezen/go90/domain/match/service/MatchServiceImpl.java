@@ -63,6 +63,15 @@ public class MatchServiceImpl implements MatchService {
 		List<Statistics> list = matchMapper.statisticsMatchAndMember(matchId,memberId);
 	return list;
 	}
+
+	/**
+	 * 선수와 총 경기수 통계 위한 메서드
+	 */
+	@Override
+	public Statistics matchCount(String memberId) {
+		Statistics matches = matchMapper.matchCount(memberId);
+		return matches;
+	}
 	
 	
 	

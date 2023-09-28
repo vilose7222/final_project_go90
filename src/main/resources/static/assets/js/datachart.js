@@ -45,12 +45,12 @@ tableRows.forEach(function(row, index) {
 		let cells = row.getElementsByTagName("td");
 		let matchDate = cells[0].textContent;
 		let scores = [
-			parseInt(cells[1].textContent),
-			parseInt(cells[2].textContent),
-			parseInt(cells[3].textContent),
-			parseInt(cells[4].textContent),
+			  parseInt(cells[1].textContent),
+    parseInt(cells[2].textContent),
+    parseInt(cells[3].textContent),
+    parseInt(cells[4].textContent),
 		];
-
+		 scores = scores.map(score => isNaN(score) ? 0 : score);
 		// 그래프 업데이트
 		updateChart(matchDate, scores);
 	});
@@ -195,22 +195,16 @@ initializeGraph();
 
 
 
-
-
-
-
-
-
-
-
-
-
+//총 진행한 경기 수 
+const matchCount = document.querySelector('input[name = "matchCount"]').value;
+//선수가 참여한 총 경기 수 
+const playerMatchCount = document.querySelector('input[name = "playerMatchCount"]').value;
 
 /**세번째 그래프 */
 
 // 총 경기수와 출전 경기수 데이터 
-let totalGames = 20; //20경기라고 가정
-let participatedGames = 10; //10경기라고 가정
+let totalGames = matchCount; 
+let participatedGames = playerMatchCount;
 
 // 3번째:파이 차트
 let ctxPie = document.getElementById("pieChart").getContext("2d");
@@ -220,6 +214,7 @@ let myPieChart = new Chart(ctxPie, {
 		labels: ["총 경기수", "출전 경기수"], // 각 부분의 라벨
 		datasets: [
 			{
+				
 				data: [totalGames, participatedGames], // 데이터 값 설정
 				backgroundColor: ["rgba(75, 192, 192, 0.5)", "rgba(255, 99, 132, 0.5)"], // 파이 차트 부분의 색상 설정
 			},

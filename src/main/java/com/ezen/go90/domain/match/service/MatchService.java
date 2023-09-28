@@ -26,4 +26,7 @@ public interface MatchService {
 	public Map<String, List<Participant>> loadAllHistory(String memberId);
 	
 	public List<Statistics> statistics(int matchId,String memberId);
+	
+	//선수와 총 경기 반환
+	public Statistics matchCount(String memberId);
 }

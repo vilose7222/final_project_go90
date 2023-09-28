@@ -156,6 +156,10 @@ public class MemberController {
 	}
 
 	/** 회원 정보 수정 요청 처리 */
+	/**
+	 * @param
+	 * @return
+	 */
 	@PostMapping("/mypage/{memberId}")
 	public String edit(@PathVariable("memberId") String memberId, @ModelAttribute Member member,
 			@RequestParam(value = "uploadImg", required = false) MultipartFile uploadImg) {
@@ -209,24 +213,24 @@ public class MemberController {
 			return "member/login";
 		}
 
-		 // 데이터 검증 정상 처리 시
-	      Member loginMember = memberService.isMember(loginForm.getLoginId(), loginForm.getPasswd(), loginForm.getRank());
+		// 데이터 검증 정상 처리 시
+		Member loginMember = memberService.isMember(loginForm.getLoginId(), loginForm.getPasswd(), loginForm.getRank());
 
-	      // 회원이 아닌 경우
-	      if (loginMember == null) {
-	         bindingResult.reject("loginFail", "아이디 또는 비밀번호가 맞지 않습니다.");
-	         return "member/login";
-	      }
+		// 회원이 아닌 경우
+		if (loginMember == null) {
+			bindingResult.reject("loginFail", "아이디 또는 비밀번호가 맞지 않습니다.");
+			return "member/login";
+		}
 
-	      // 회원인 경우 세션 생성 및 로그인 아이디 설정
-	      HttpSession session = request.getSession();
-	      session.setAttribute("loginMember", loginMember);
+		// 회원인 경우 세션 생성 및 로그인 아이디 설정
+		HttpSession session = request.getSession();
+		session.setAttribute("loginMember", loginMember);
 
-	      // 로그인 처리 후 사용자가 원래 요청하려던 URL로 리다이렉트 처리
-	      String redirectURI = (String) session.getAttribute("redirectURI");
-	      log.warn(redirectURI);
-	      String uri = redirectURI == null ? "/" : redirectURI;
-	      return "redirect:" + uri;
+		// 로그인 처리 후 사용자가 원래 요청하려던 URL로 리다이렉트 처리
+		String redirectURI = (String) session.getAttribute("redirectURI");
+		log.warn(redirectURI);
+		String uri = redirectURI == null ? "/" : redirectURI;
+		return "redirect:" + uri;
 	}
 
 	/** 회원 로그아웃 요청 처리 */
@@ -248,30 +252,29 @@ public class MemberController {
 		return member != null ? true : false;
 	}
 
-	/**마이페이지 회원 기록 처리*/
+	/** 마이페이지 회원 기록 처리 */
 	@GetMapping("{memberId}/mystats")
-	public String loadStats(Model model,@PathVariable("memberId")String memberId) {
-		
+	public String loadStats(Model model, @PathVariable("memberId") String memberId) {
+
 		Member member = memberService.getMember(memberId);
-		
+		Statistics matchCount = Statistics.builder().memberId(memberId).build();
+		matchCount = matchService.matchCount(memberId);
 		Map<String, List<Participant>> playerStats = matchService.loadAllHistory(memberId);
-			model.addAttribute("member",member);
-			model.addAttribute("playerStats",playerStats);
+		model.addAttribute("member", member);
+		model.addAttribute("matchCount", matchCount);
+		model.addAttribute("playerStats", playerStats);
 		return "member/mystats";
 	}
-	
+
 	/** 마이페이지 경기 총 득점 통계를 위한 처리(JS의 요청에 응답) */
 	@GetMapping("/mystats/{matchId}/{memberId}")
 	@ResponseBody
-	public List<Statistics> matchStatistics( @PathVariable("matchId")int matchId,
-			 								 @PathVariable("memberId")String memberId
-											,Model model ){
-		log.info("수신한 matchId : {}",matchId);
-		log.info("수신한 선수 아이디 : {}",memberId);
+	public List<Statistics> matchStatistics(@PathVariable("matchId") int matchId,
+			@PathVariable("memberId") String memberId, Model model) {
 		List<Statistics> statistics = matchService.statistics(matchId, memberId);
 		return statistics;
 	}
-	
+
 	/** API 서비스 시 예외 처리를 위한 테스트 */
 	// @GetMapping("/rest/{id}")
 	// @ResponseBody

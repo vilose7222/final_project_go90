@@ -42,9 +42,26 @@ public class MatchServiceTest {
 	
 	@Test
 	@Transactional
+	@Disabled
 	public void statiscticsTest() {
 		List<Statistics> list = matchService.statistics(2, "player11");
 		
 		log.info("2번경기 팀 총득점, 선수 총득점 : {}",list);
 	}
+	
+	
+	
+	@Test
+	public void matchCountTests() {
+			String memberId = "player11";
+			Statistics stat = Statistics.builder().memberId(memberId).build();
+			stat = matchService.matchCount(memberId);
+		log.info("경기수에 대한 통계 : {}",stat);
+	}
+	
+	
+	
+	
+	
+	
 }
