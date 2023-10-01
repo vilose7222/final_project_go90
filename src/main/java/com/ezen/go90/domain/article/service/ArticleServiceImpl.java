@@ -126,4 +126,23 @@ public class ArticleServiceImpl implements ArticleService {
 	public List<Image> getImage() {
 		return articleMapper.totalImageList();
 	}
+
+	/**
+	 * 
+	 * 댓글 삭제 기능
+	 * @author 윤동진
+	 * @since 23.09.30
+	 * @param replyId = 댓글 테이블의 식별번호 (매개변수로 해당 댓글 삭제)
+	 * @return 삭제 성공시 true, 실패 시 false를 리턴
+	 */
+	@Override
+	@Transactional
+	public boolean removeReply(int replyId) {
+		 try {
+		        articleMapper.removeSelectedReply(replyId);
+		        return true;
+		    } catch (Exception e) {
+		        return false;
+		    }
+	}
 }

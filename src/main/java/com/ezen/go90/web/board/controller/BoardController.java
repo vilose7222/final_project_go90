@@ -258,6 +258,25 @@ public class BoardController {
 		ReplyDTO reply = articleService.reply(replyDTO);
 		return reply;
 	}
+	/**
+	 * 
+	 * 댓글 삭제 기능
+	 * @author 윤동진
+	 * @since 23.09.30
+	 * @param articleId = 게시글 테이블의 식별번호
+	 * @param hitcount = 조회수
+	 * @param replyId = 댓글 테이블의 식별번호 (매개변수로 해당 댓글 삭제)
+	 * @return 게시판 상세보기 페이지로 재요청
+	 */
+	@GetMapping("/delete/reply/{articleId}/{hitcount}/{replyId}")
+	public String removeReply(
+							  @PathVariable("articleId")int articleId,
+							  @PathVariable("hitcount")int hitcount,
+							  @PathVariable("replyId")int replyId,
+							  Model model) {
+		articleService.removeReply(replyId);
+		return "redirect:/board/details/" + articleId + "/" + hitcount;
+	}
 
 //	  /* 답글 작성 페이지 이동 */
 //	   @GetMapping("/reply/{articleId}")

@@ -56,6 +56,11 @@ public class MemberServiceImpl implements MemberService{
 		memberMapper.transfer(memberId);
 		memberMapper.delete(memberId);
 	}
+
+	@Override
+	public Member findMemberId(String name, String email) {
+		return memberMapper.findMemberId(name, email);
+	}
 	
 	
 

@@ -52,5 +52,7 @@ public interface ArticleService {
 
 	/** 이미지 출력 */
 	public List<Image> getImage();
+	
+	public boolean removeReply(int replyId);
 
 }

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+<title>아이디 찾기</title>
+
+<style>
+#findIdPopup {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#findIdPopup h1 {
+	display: inline-block;
+	padding: 1%;
+	border-bottom: 1px double #000;
+}
+
+#find-inner-form{
+	border:1px solid #000;
+	padding:5%;
+	margin-bottom:5%;
+}
+
+input[type="button"],
+button{
+  	box-shadow: 3px 3px 3px gray;
+  	background:#000;
+  	color:#fff;
+  	padding:1%;
+  	border-radius:5px;
+}
+
+input[type="button"]:hover,
+button:hover{
+	color:#000;
+	background:#fff;
+}
+.alertText{
+color:orange;
+}
+
+</style>
+</head>
+<body>
+
+
+	<div id="findIdPopup" class="popup">
+		<h1>아이디 찾기</h1>
+		<div id="findForm">
+		<p>이름과 이메일을 입력하세요.</p>
+			<div id="find-inner-form">
+				<label for="name">이름:</label> <input type="text" id="name"
+					name="name" required>
+				<label for="email">이메일:</label> <input type="email" id="email"
+					name="email" required>
+			</div>
+			<button id="findIdButton" onclick="findMember()">아이디 찾기</button>
+	<div class="alert-container">
+		<p class="alertText"></p>
+	</div>
+		</div>
+	</div>
+
+
+	<script>
+		async function findMember() {
+			try {
+				let findForm = document.querySelector('#findForm');
+				
+				let name = document.querySelector('input[name="name"]').value;
+				let email = document.querySelector('input[name="email"]').value;
+				let encodedName = encodeURIComponent(name);
+				
+				let response = await fetch(`/member/result/${encodedName}/${email}`);
+				let data = await response.json();
+				
+				if(name){
+				findForm.innerHTML=`
+				<p>
+				 <span id="foundId">
+				  회원님의 아이디는 ${data.memberId}입니다. 
+				 </span>
+				</p>
+					<input type="button" onclick="closePopup()" value="창 닫기">`;
+				
+				}else if(!name || !email){
+				let alertText = document.querySelector('.alertText');
+				alertText.innerHTML='정보를 입력 해 주세요';
+				}
+			} catch (error) {
+				console.error('데이터 불러오지 못함', error);
+			}
+
+		}
+	function closePopup(){
+		window.close();
+	}
+		
+	</script>
+
+
+
+</body>
+</html>

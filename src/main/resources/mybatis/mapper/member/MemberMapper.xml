@@ -67,4 +67,25 @@
       WHERE member_id = #{id} AND passwd = #{passwd}
    </select>
    
+   
+   <select id="findMemberId" resultType="Member">
+   		SELECT member_id , rank
+		FROM member
+		WHERE name=#{name} AND email=#{email}
+	</select>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
 </mapper>

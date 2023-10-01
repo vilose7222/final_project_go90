@@ -45,6 +45,17 @@ public interface MemberMapper {
 	
 	/**회원 탈퇴*/
 	public void delete(String memberId);
+	
+	/**
+	 * 
+	 * 이름과 이메일 입력으로 아이디 찾기
+	 * @since 23.10.01
+	 * @author 윤동진
+	 * @param  name = 회원 이름 
+	 * @param  email = 회원 이메일 주소 
+	 * @return 회원 객체에 저장된 아이디 (이름과 이메일이 일치하는 정보)
+	 */
+	public Member findMemberId(@Param("name") String name, @Param("email") String email);
 
 }
 

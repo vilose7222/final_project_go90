@@ -202,7 +202,7 @@
                         th:href="@{/board/{boardId}(boardId=${pageParams.boardId}, page=${pagination.previousStartPage})}">이전목록</a>
                   </li>
                   <li class="page-item" aria-current="page" th:each="i : ${#numbers.sequence(pagination.startPage, pagination.endPage)}">
-                     <a class="page-link" id="selected-page" href="#" th:text="${i}" 
+                     <a class="page-link" id="selected-page" href="#" th:text="${i}" th:if="${i != 0}"
                         th:href="@{/board/{boardId}(boardId=${pageParams.boardId} , page=${i},type=${type},input=${input})}">1</a>
                   </li>
                   <li class="page-item" th:if="${pagination.showNext} ?: '' ">

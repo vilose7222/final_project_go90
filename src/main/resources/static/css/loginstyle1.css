@@ -14,11 +14,11 @@ button:active{outline:none}
 /* 로그인 */
 #sh_login{max-width:520px;width:100%;margin:30px auto;padding:70px 90px;border:1px solid #e1e1e1;border-radius:6px}
 #sh_login .tit{margin-bottom:30px;font-size:20px;font-weight:700;color:#222;text-align:center;font-family:'Poppins'} 
-#sh_login .tit span{color:#0054a6}
+#sh_login .tit span{color:#666}
 #sh_login input[type=text], #sh_login input[type=password]{width:100%;height:60px;padding:0 20px;margin-bottom:10px;border-radius:3px;border:1px solid #e1e1e1!important;font-size:15px;background-image:none!important}
 #sh_login .at_ck{padding:5px 0 15px;font-size:14px;text-align:right}
-#sh_login input[type=submit]{width:100%;height:60px;border:none;border-radius:3px;font-size:15px;color:#fff;background-color:#0054a6;-webkit-transition:all .2s;transition:all .2s;font-family:'notokr-medium'}
-#sh_login input[type=submit]:hover{background-color:#0064c5}
+#sh_login input[type=submit]{width:100%;height:60px;border:none;border-radius:3px;font-size:15px;color:#fff;background-color:#000;-webkit-transition:all .2s;transition:all .2s;font-family:'notokr-medium'}
+#sh_login input[type=submit]:hover{background-color:#666}
 #sh_login ul{overflow:hidden;margin:20px 0 40px;text-align:center}
 #sh_login ul li{float:left;position:relative;width:calc(100% / 3);font-size:14px} 
 #sh_login ul li a{color:#666}

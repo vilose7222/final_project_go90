@@ -90,46 +90,80 @@
             <label for="login_pw" class="sound_only">비밀번호<strong class="sound_only"> 필수</strong></label>
             <input type="password" name="mb_password" id="login_pw" required class="frm_input required" size="20" maxLength="20" placeholder="비밀번호" th:field="*{passwd}">
             <p class="at_ck">
-                <input type="checkbox" name="auto_login" id="login_auto_login">
-                <label for="login_auto_login">자동로그인</label>
+                <input type="checkbox" name="save_id" id="login_save_id">
+                <label for="login_save_id">ID 저장</label>
             </p>
             <input type="submit" value="로그인">
         </fieldset>
              <ul>
             <li><a href="/member/register">회원가입</a></li>
-         <li><a href="password_lost.html" target="_blank" id="login_password_lost">아이디 찾기</a></li>
-            <li><a href="password_lost.html" target="_blank" id="login_password_lost">비밀번호 찾기</a></li>
+         <li><a href="#"    onclick="openPopup()">아이디 찾기</a></li>
+            <li><a href="password_lost.html" target="_blank" id="login_password_lost">고객센터</a></li>
         </ul>
-        <div class="bnr">
-           <img src="../skin/member/sh_basic/img/bnr_img.png" alt="홈페이지 제작 현대이지웹" />
-            <div class="txt">
-                <p>현대이지웹 <span>1544-6062</span></p>
-                홈페이지 제작 및 문의
-            </div>
-        </div>
+      
     </form>
 </div>
 
-<script>
-$(function(){
-    $("#login_auto_login").click(function(){
-        if (this.checked) {
-            this.checked = confirm("자동로그인을 사용하시면 다음부터 회원아이디와 비밀번호를 입력하실 필요가 없습니다.\n\n공공장소에서는 개인정보가 유출될 수 있으니 사용을 자제하여 주십시오.\n\n자동로그인을 사용하시겠습니까?");
-        }
-    });
-});
-
-function flogin_submit(f)
-{
-    return true;
-}
-</script>
 <!-- sh_login [e] -->
         </div><!-- sh_content -->
    
 >
 
 
+
+<script>
+function openPopup(event) {
+    // 팝업을 열 때 사용할 URL (컨트롤러로)
+    const popupURL = "/member/find";
+
+    // 팝업 창의 속성 설정
+    const popupOptions = "width=600,height=400,location=no,toolbar=no,menubar=no,scrollbars=yes,resizable=yes,left=550,top=200";
+
+    // 팝업 창 열기
+    window.open(popupURL, "FindIdPopup", popupOptions);
+    
+    event.preventDefault();
+}
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // ID 저장 체크박스 요소를 가져오기
+    const saveIdCheckbox = document.getElementById("login_save_id");
+    
+    // ID 저장 체크박스 상태가 변경될 때 함수 실행
+    saveIdCheckbox.addEventListener("change", function() {
+        if (this.checked) {
+            // 체크박스가 선택된 경우, 쿠키에 ID를 저장
+            const idToSave = document.getElementById("login_id").value;
+            if (idToSave) {
+                // 쿠키에 ID를 7일동안 저장
+                let expires = new Date();
+                expires.setTime(expires.getTime() + 7 * 24 * 60 * 60 * 1000);
+                document.cookie = "saved_id=" + idToSave + "; expires=" + expires.toUTCString() + "; path=/";
+            }
+        } else {
+            // 체크박스가 해제된 경우, 쿠키 삭제
+            document.cookie = "saved_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        }
+    });
+    // 페이지 로딩 시 쿠키를 확인하고 ID를 복원
+    let savedId = getCookie("saved_id");
+    if (savedId) {
+        document.getElementById("login_id").value = savedId;
+        saveIdCheckbox.checked = true;
+    }
+});
+function getCookie(name) {
+	let value = "; " + document.cookie;
+	let parts = value.split("; " + name + "=");
+    if (parts.length === 2) return parts.pop().split(";").shift();
+}
+
+
+
+
+
+</script>
 
 </th:block>
 

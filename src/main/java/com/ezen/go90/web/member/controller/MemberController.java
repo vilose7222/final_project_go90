@@ -275,6 +275,19 @@ public class MemberController {
 		return statistics;
 	}
 
+	@GetMapping("/find")
+	public String findMember(Model model) {
+		return "/member/findpopup";
+	}
+	
+	@GetMapping(value="/result/{name}/{email}",produces="application/json; charset=UTF-8")
+	@ResponseBody
+	public Member resultFind(@PathVariable("name")String name,
+							 @PathVariable("email")String email,Model model) {
+		Member member = memberService.findMemberId(name, email);
+		return member;
+	}
+	
 	/** API 서비스 시 예외 처리를 위한 테스트 */
 	// @GetMapping("/rest/{id}")
 	// @ResponseBody

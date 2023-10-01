@@ -24,5 +24,7 @@ public interface MemberService {
 	public void editMember(Member member);
 	
 	public void secession(String memberId);
+	
+	public Member findMemberId(String name, String email);
 
 }

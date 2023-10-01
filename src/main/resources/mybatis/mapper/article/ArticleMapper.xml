@@ -34,21 +34,6 @@
 			       </if>)
    </insert>
    
-   <!-- 게시글 목록 전체 반환(페이징처리 없이) 
-   <select id="findByAll" parameterType="map" resultType="ArticleDTO">
-      SELECT article_id, 
-             board_id, 
-             article_writer, 
-             article_regdate, 
-             article_title, 
-             article_content, 
-             hitcount, 
-             image_path, 
-             member_id
-     FROM    article
-    
-   </select>-->
-   
   <select id ="findArticles" parameterType="int" resultType="ArticleDTO">
             SELECT article_id, 
              	   board_id, 
@@ -73,28 +58,16 @@
        WHERE article_id = #{articleId}
    </update> 
    
-   
-    <!-- 게시글 삭제 전 articleId 조정 -->
-   <update id="beforeRemoveUpdateArticleId" parameterType="map">
-       UPDATE article 
-       SET article_id = article_id - 1 
-       WHERE board_id = #{boardId} 
-       AND article_id > #{articleId}
-   </update>
-   
-   
    <!-- 게시글 삭제 -->
      <delete id="removeArticle" parameterType="int">
        DELETE FROM article
        WHERE article_id = #{articleId}
-   </delete>
-   
+   </delete>   
    <!-- 댓글 같이삭제 -->
    	<delete id = "removeReply" parameterType="int">
    		DELETE FROM reply
    		WHERE article_id = #{articleId}
    	</delete>
-   
    
  
    <!-- 게시글 상세보기 (게시판id 파라미터 받는다는 가정) -->
@@ -125,13 +98,19 @@
                    #{replyWriter},
                    #{replyContent},
                    SYSDATE,
-                   
                    (SELECT COALESCE(MAX(order_no), 0) + 1
                     FROM   reply
                     WHERE  article_id = #{articleId}), 
-                    
                     #{levelNo} + 1)
    </insert>
+   
+   <!-- 댓글 삭제 -->
+   <delete id="removeSelectedReply" parameterType="int">
+   	DELETE reply
+   	WHERE reply_id=#{replyId}
+   </delete>
+   
+   
    
    <!-- 댓글 리스트 보여주기 -->
    <select id="replyShow" parameterType="int" resultType="ReplyDTO">
@@ -146,8 +125,6 @@
 	   WHERE  article_id = #{articleId}
 	   ORDER BY reply_id DESC
    </select>
-   
-  
    
    <!-- 대댓글 전 orderNo 조정 -->
    <update id="updateOrderNo" parameterType="map">

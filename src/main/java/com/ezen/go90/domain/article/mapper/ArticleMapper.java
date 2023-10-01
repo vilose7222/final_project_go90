@@ -68,6 +68,12 @@ public interface ArticleMapper {
 		
 		/** 이미지 목록 반환 */
 	    public List<Image> totalImageList();
+	    
+	    
+	    
+	    
+	    public boolean removeSelectedReply(int replyId); 
+	     
 	}
    
 
