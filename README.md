@@ -5,7 +5,8 @@
 ### ⚽축구 동호회  홈페이지
 
 
-![](https://velog.velcdn.com/images/vilose7222/post/3b5a1fb1-b729-4fad-9f28-35750b10cfd2/image.png)
+![image](https://github.com/vilose7222/final_project_go90/assets/141006779/6ec1a6ad-e10e-4c6c-baab-bd8ca3541fbf)
+
 
 
 ## <strong> 👪 팀 소개 및 역할 </strong>
