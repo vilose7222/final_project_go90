@@ -21,4 +21,6 @@
 ![](https://velog.velcdn.com/images/vilose7222/post/e6ace4d5-1d41-4cd8-9be3-be8d012a62f0/image.png)
 
 
+## 🔭 구현 기능 프리뷰 
 
+![](https://velog.velcdn.com/images/vilose7222/post/786b570a-8a1f-4a98-8c40-391f4d6e0818/image.png)
