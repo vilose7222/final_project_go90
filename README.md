@@ -31,3 +31,5 @@
 ## 🔭 구현 기능 프리뷰 
 
 ![](https://velog.velcdn.com/images/vilose7222/post/786b570a-8a1f-4a98-8c40-391f4d6e0818/image.png)
+
+![image](https://github.com/vilose7222/project_ams_gui/assets/141006779/45405f83-3e22-4e31-96bf-0fc4029229f0)
