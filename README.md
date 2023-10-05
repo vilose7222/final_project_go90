@@ -1,4 +1,10 @@
-# Project_Go90
+## 담당한 기능 미리보기1 => 스마트 전술판
+
+![formation](https://github.com/vilose7222/project_ams_gui/assets/141006779/42a5864b-2670-40cb-bc53-4c58191575c2)
+
+## 담당한 기능 미리보기2 => 내 스텟
+
+![mystat](https://github.com/vilose7222/project_ams_gui/assets/141006779/82f59dbd-2aad-41e1-a51e-06008c57981b)
 
 ## <strong> 📌개요 </strong>
 
@@ -7,7 +13,8 @@
 
 ![image](https://github.com/vilose7222/final_project_go90/assets/141006779/6ec1a6ad-e10e-4c6c-baab-bd8ca3541fbf)
 
-
+## 개발 기간 
+23.09.04 ~ 23.09.26
 
 ## <strong> 👪 팀 소개 및 역할 </strong>
 
